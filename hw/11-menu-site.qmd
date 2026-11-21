@@ -1,0 +1,18 @@
+---
+title: "Build 11: Restaurant Menu Site"
+params:
+  number: 11
+  purpose: "Design a restaurant menu whose items, prices, and ingredients live in a CSV file and get rendered by Quarto into a website with generated food images."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+## The Build
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

@@ -1,0 +1,12 @@
+---
+title: "Data Visualization as Analysis"
+params:
+  class: "13-data-viz"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

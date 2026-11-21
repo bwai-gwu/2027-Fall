@@ -2,7 +2,7 @@
 title: "Build 1: Git Warm-Up"
 params:
   number: 1
-  purpose: "Get fluent with the core Git and GitHub workflow by hand, with no agent: make a repository with a clean commit history, open and merge a pull request, and deploy a live page to GitHub Pages."
+  purpose: "Learn version control by hand: create a repo in GitHub Desktop, draft a README with a chat-based AI, then edit, commit, and push it yourself."
 execute:
   echo: false
   warning: false

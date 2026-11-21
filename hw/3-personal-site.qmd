@@ -1,0 +1,18 @@
+---
+title: "Build 3: Personal Site"
+params:
+  number: 3
+  purpose: "Direct an agent for the first time to build a personal website in HTML, CSS, and JavaScript, reviewing every change and making every commit yourself."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+## The Build
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

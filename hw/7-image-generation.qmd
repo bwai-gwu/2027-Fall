@@ -1,0 +1,18 @@
+---
+title: "Build 7: Image Generation"
+params:
+  number: 7
+  purpose: "Have your agent call an image model (Nano Banana) through an API to make banners and art for your site, keeping your API key secret."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+## The Build
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

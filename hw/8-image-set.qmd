@@ -1,0 +1,18 @@
+---
+title: "Build 8: Consistent Image Set"
+params:
+  number: 8
+  purpose: "Make a set of images that look like they belong together, using reference images and Python post-processing for the parts that must never change."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+## The Build
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

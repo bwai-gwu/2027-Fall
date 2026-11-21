@@ -1,5 +1,5 @@
 ---
-title: "How LLMs Work (and Fail)"
+title: "How LLMs Work"
 params:
   class: "2-how-llms-work"
 execute:

@@ -2,7 +2,7 @@
 title: "Build 2: Probe the Model"
 params:
   number: 2
-  purpose: "See how LLMs work and fail firsthand by running five small experiments (tokenization quirks, sampling variance, context limits, fabricated citations, and sycophancy) and writing them up as a Quarto report."
+  purpose: "Run small experiments in a chat tool (tokenizer quirks, temperature, made-up citations, sycophancy) to see how LLMs work and fail, and write them up in Markdown."
 execute:
   echo: false
   warning: false

@@ -1,5 +1,5 @@
 ---
-title: "Team Project Overview"
+title: "Final Project Overview"
 toc: true
 toc-location: right
 execute:
@@ -8,29 +8,30 @@ execute:
   message: false
 ---
 
-The team project is the capstone of the course — and the only piece of fully
-open-ended work. In teams of **3–4**, you'll propose and build an ambitious,
-real-world project of your own design, applying every workflow skill from the
-semester: version control, planning, skills, verification, continuous integration,
-deployment, LLM APIs, MCP, and (where it helps) multi-agent orchestration.
+The final project is your chance to build something of your own design. It is
+**individual**: everyone does their own project. Use the workflow from the
+semester (agent → code → artifact) and any of the things we've built along the
+way: websites, writing, images, animation, sound, documents, data
+visualizations, and slides.
 
-Teams form in Meeting 5. From Meeting 9 on, the last ~45 minutes of each class is
-**team studio time**, where the instructor checks in with each team. The final two
-meetings are dedicated studio sessions, and we learn collaboration workflows (pull
-request reviews, issues, and parallel agents in git worktrees) live in Meeting 12.
+We introduce the project in Week 8, so you have time to think about what you
+want to make before the proposal is due.
 
 **Summary of deliverables:**
 
-<div style="width:500px">
+<div style="width:600px">
 
-Item | Weight | Due
------|--------|-----------------
-[Proposal](1-proposal.qmd) | 5% | Oct 13 (Meeting 8)
-[Interim Report](2-interim-report.qmd) | 10% | Nov 10 (Meeting 12)
-[Final Report](3-final-report.qmd) | 15% | Dec 1 (Meeting 14)
-[Final Presentation](4-presentation.qmd) | 10% | Final exam slot (date TBD)
+Item | Weight | Grading | Due
+-----|--------|---------|-----------------
+[Proposal](1-proposal.qmd) | 2% | Completion (1 / 0) | Oct 27 (Week 10)
+[Final Project](2-final.qmd) | 13% | 0 / 0.5 / 1 ([rubric](../syllabus.qmd#final-project-rubric)) | Dec 8
 
 </div>
+
+The final submission is a link to a GitHub repository with your project and all
+of its source files, a 5-minute video about your project posted to YouTube, your
+agent transcripts, and a report of your token usage. A few projects will be
+showcased at the start of the final exam.
 
 ```{r child = here::here("fragments", "placeholder.qmd")}
 ```

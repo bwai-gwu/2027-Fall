@@ -1,5 +1,5 @@
 ---
-title: "How LLMs Work (and Fail)"
+title: "How LLMs Work"
 subtitle: "EMSE 4197 · Week 2"
 format: revealjs
 ---

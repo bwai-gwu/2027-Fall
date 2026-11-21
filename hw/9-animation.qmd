@@ -1,0 +1,18 @@
+---
+title: "Build 9: Animated Explainer"
+params:
+  number: 9
+  purpose: "Use the agent to write code that renders a short animation explaining an idea."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+## The Build
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

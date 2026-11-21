@@ -1,0 +1,12 @@
+---
+title: "Presentations"
+params:
+  class: "14-presentations"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

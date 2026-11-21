@@ -1,0 +1,18 @@
+---
+title: "Build 13: Data Story"
+params:
+  number: 13
+  purpose: "Answer a question with data on a Quarto page, using charts as your analysis tool and verifying the numbers behind them."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+## The Build
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```
