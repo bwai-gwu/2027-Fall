@@ -28,8 +28,8 @@ project:
 
 website:
   title: EMSE 4197
-  site-url: https://jhelvy.github.io/intro-to-agentic-engineering/
-  repo-url: https://github.com/jhelvy/intro-to-agentic-engineering
+  site-url: https://bwai-gwu.github.io/2027-Fall/
+  repo-url: https://github.com/bwai-gwu/2027-Fall
   repo-actions: [edit, issue]
   description: 'Course website for the Fall 2027 semester of the EMSE course "Build with AI" at GWU'
   search: true
@@ -95,21 +95,15 @@ website:
       - text: Resources
         icon: bookmark-fill
         href: references.qmd
-      - section: Other
-        icon: question-circle-fill
-        contents:
-          - text: About
-            icon: question-circle-fill
-            href: about.qmd
-          - text: License
-            icon: award-fill
-            href: LICENSE.qmd
-          - text: Contact
-            icon: envelope-fill
-            href: mailto:jph@gwu.edu
-          - text: Source files
-            icon: github
-            href: https://github.com/jhelvy/intro-to-agentic-engineering
+      - text: License
+        icon: award-fill
+        href: LICENSE.qmd
+      - text: Contact
+        icon: envelope-fill
+        href: mailto:jph@gwu.edu
+      - text: Source files
+        icon: github
+        href: https://github.com/bwai-gwu/2027-Fall
   page-footer:
     center:
       - text: "© 2027 John Paul Helveston {{< fa creative-commons-sa >}} <a href='LICENSE.html'><i class='fab fa-creative-commons'></i><i class='fab fa-creative-commons-by'></i><i class='fab fa-creative-commons-sa'></i></a><br><i class='far fa-calendar-alt'></i> {{< var weekday >}} | <i class='far fa-clock'></i> {{< var time >}} | <i class='fa fa-map-marker-alt'></i> {{< var room >}}<br><a href='https://www.jhelvy.com'><i class='fas fa-user'></i> Dr. John Paul Helveston</a> | <a href='mailto:{{< var email >}}'><i class='fas fa-envelope'></i> {{< var email >}}</a> | <a href='{{< var repo >}}'><i class='fab fa-github'></i></a>"

@@ -18,3 +18,5 @@
 
 ```{r child = here::here("fragments", "prerequisites.qmd")}
 ```
+
+**Course developer**: This course was developed by [John Paul Helveston](https://www.jhelvy.com).
