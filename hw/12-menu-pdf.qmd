@@ -1,0 +1,18 @@
+---
+title: "Build 12: Restaurant Menu PDF"
+params:
+  number: 12
+  purpose: "Turn your restaurant menu into a beautiful, print-ready PDF by rendering a web page to PDF."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+## The Build
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

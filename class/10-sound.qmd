@@ -1,0 +1,12 @@
+---
+title: "Sound & Music with Code"
+params:
+  class: "10-sound"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

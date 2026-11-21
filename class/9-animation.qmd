@@ -1,0 +1,12 @@
+---
+title: "Animation with Code"
+params:
+  class: "9-animation"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

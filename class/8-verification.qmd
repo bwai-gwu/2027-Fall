@@ -1,0 +1,12 @@
+---
+title: "Verification Loops"
+params:
+  class: "8-verification"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

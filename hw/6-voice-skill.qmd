@@ -1,0 +1,18 @@
+---
+title: "Build 6: Voice Skill"
+params:
+  number: 6
+  purpose: "Write your own writing skill that captures your voice and style, then use it to write a blog post for your site."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+## The Build
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

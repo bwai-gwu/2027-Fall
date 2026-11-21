@@ -1,0 +1,18 @@
+---
+title: "Build 10: Song or Sound Pack"
+params:
+  number: 10
+  purpose: "Use the agent to write code that composes a song or synthesizes a pack of sounds."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+## The Build
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

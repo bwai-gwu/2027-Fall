@@ -1,0 +1,18 @@
+---
+title: "Build 4: Deploy Your Site"
+params:
+  number: 4
+  purpose: "Put your personal site on the web with GitHub Pages and add one interactive JavaScript feature."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+## The Build
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

@@ -18,8 +18,10 @@ source("_common.R")
 Instructor | Course
 ---|---
 <i class="bi-person-fill"></i> John Paul Helveston | <i class="bi-calendar-fill"></i> {{< var weekday >}}
-<i class="bi-geo-alt-fill"></i> [{{< var room >}}]({{< var room_url >}}) | <i class="bi-calendar-week-fill"></i> {{< var dates >}}
-<i class="bi-envelope-fill"></i> [{{< var email >}}](mailto:{{< var email >}}) | <i class="bi-clock-fill"></i> {{< var time >}}
+<i class="bi-building-fill"></i> Science & Engineering Hall, 2830 | <i class="bi-geo-alt-fill"></i> [{{< var room >}}]({{< var room_url >}})
+<i class="bi-envelope-fill"></i> [{{< var email >}}](mailto:{{< var email >}}) | <i class="bi-calendar-week-fill"></i> {{< var dates >}}
+<i class="fa fa-brands fa-bluesky"></i> [\@jhelvy.bsky.social]({{< var bluesky >}}) | <i class="bi-clock-fill"></i> {{< var time >}}
+<i class="bi-slack"></i> [Slack]({{< var slack >}}){target="_blank"} |
 </div>
 
 ## Course Description
@@ -39,144 +41,459 @@ Instructor | Course
 
 # How the Course Works
 
-The course runs on a **dual spine**. Every week pairs:
+This class is a workshop. Each week has the same rhythm:
 
-- **A workflow concept, taught hands-on in class.** Our 2.5-hour weekly session is
-  a workshop. We learn a workflow skill by *doing it together* in real time — the
-  first time you make a repository, open a pull request, or set up continuous
-  integration, you'll do it live in class.
-- **An ambitious take-home build.** Each week's individual assignment is a
-  build in an unfamiliar domain that forces you to apply that week's workflow
-  skill on your own, at higher stakes. Every build includes a short **reading**
-  that connects the work to the bigger picture.
+1. **Quiz.** Class starts with a short, handwritten quiz on the previous week.
+2. **Concept.** We learn one new idea (how LLMs work, what an agent is, how to
+   inject data into a document, etc.).
+3. **Build together.** We use that idea in class to make something, hands-on.
+4. **Build at home.** You take the idea further on your own in that week's
+   [build](#builds), due the following week.
 
-The semester has two parts:
+Each week pairs a **concept** (the idea we learn) with a **building** (the kind of
+thing we make). Some buildings span several weeks. For example, we work on
+websites in Weeks 3 through 5, and each week adds a new idea on top of the last.
+The [schedule](schedule.qmd) lists both for every week.
 
-- **Part 1: Working with an agent (Meetings 1–8).** We start with Git *by hand*,
-  look under the hood at how LLMs work and fail, and then climb a trust gradient:
-  high-touch collaboration with an agent → leverage (skills) → delegating work and
-  verifying it → automating verification with continuous integration.
-- **Part 2: Building with LLMs (Meetings 9–12).** We apply the workflow to real
-  data analysis in Python, call LLMs from your own code with chatlas, connect
-  agents to tools with MCP, and orchestrate multiple agents.
+The semester moves in three stages:
 
-From Meeting 9 on, the last ~45 minutes of each class is **team studio time** for
-your team project. The semester ends with two dedicated studio meetings and final
-presentations during the final exam slot. See the [schedule](schedule.qmd) for the
-meeting-by-meeting plan.
+- **Weeks 1-2: Foundations, no agents.** We use chat-based AI tools, learn how
+  LLMs work, and learn Git and GitHub by hand.
+- **Weeks 3-5: Agents and websites.** We bring in AI coding agents and build and
+  deploy websites. In Week 5 we switch to the workflow we use for the rest of the
+  semester.
+- **Weeks 6-15: New things to build.** Each week adds a new skill and a new kind
+  of artifact: writing, images, animation, sound, data-driven documents, PDFs,
+  data visualizations, and slides. You'll also work on your
+  [final project](#final-project) in the second half of the semester.
+
+## Agent → code → artifact
+
+From Week 5 on, we build everything the same way. **The agent writes the code, you
+run the code, and the code builds the artifact.** We don't ask the AI to hand us
+the finished website, image, or PDF directly. Building through code gives you
+something you can reproduce, it uses far fewer tokens, and it gives you control:
+if you want to change one thing, you change one line of code instead of
+re-rolling the whole thing and hoping.
+
+## You control Git
+
+Git is how you know what an agent changed. In this class **you always control Git
+yourself, through [GitHub Desktop](https://desktop.github.com/download/). Never
+let the agent make commits for you.** Review what the agent changed (the diff in
+GitHub Desktop), check that it works, and then commit it yourself with a message
+that says what changed.
+
+# Required Texts & Materials
+
+All readings for this course are freely available on the web and will be linked
+from each week's class page and the [Resources](references.qmd) page. Software is
+mostly free, with the exceptions noted in [AI Tools and Cost](#ai-tools-and-cost).
+
+## Software
+
+Go to the course [Software page](software.qmd) for detailed instructions on how to
+install the software we'll be using. Here's a quick list:
+
+- [Positron](https://positron.posit.co/download.html), a free code editor for
+  Python and Quarto.
+- [Python](https://www.python.org/), installed and managed with
+  [uv](https://docs.astral.sh/uv/).
+- [Quarto](https://quarto.org/docs/get-started/), for building websites,
+  documents, and slides.
+- [GitHub Desktop](https://desktop.github.com/download/) and a free
+  [GitHub](https://github.com/) account.
+- [Claude Code](https://code.claude.com/docs/en/quickstart), the AI coding agent
+  we'll use all semester. This requires **at least a Claude Pro subscription**
+  (see [AI Tools and Cost](#ai-tools-and-cost)).
+- We'll be using [Slack]({{< var slack >}}){target="_blank"} for most
+  communication.
 
 # Assignments
 
 ## Participation & Attendance
 
-**Attendance will be taken and is the primary driver of your participation grade.**
+**Attendance will be taken** and will be part of your participation grade.
 
-In-class work is hands-on and ungraded — but it is *practice for the build you do
-at home*. The take-home builds assume the skills we develop together in class, so
-missing class costs you twice: once on participation, and again on a much harder
-homework. Plan to attend in person every week.
+In-person attendance is critical as we will spend most of class building things
+together. You should plan to attend class in person each week.
 
-## Individual Builds
+**There will be no option for remote attendance (e.g. zoom)**, and class sessions
+will not be recorded. If you have any questions or need special accommodations,
+send me a message on slack and we can discuss. If you must miss class for an
+excused absence (e.g. medical issue), please message Professor Helveston and get
+notes from your fellow classmates.
 
-There are **11 builds**, each an ambitious project in a domain you likely haven't
-worked in before. Each build is delivered as a **GitHub repository that includes
-the full conversation history** with the agent, plus a short reflection on the
-build's assigned reading. Grading focuses on prompt quality, evidence of iterative
-collaboration, final product quality, and thoughtful use of the week's workflow
-skill. Builds are graded with a checklist, you may **resubmit once** for a revised
-score, and your **lowest build score is dropped**.
+Multiple absences, inappropriate or unprofessional behavior during class (such as
+monopolizing discussions or being rude or disruptive), not participating in
+classroom exercises, and not being prepared for class will result in a poor score
+for attendance and participation.
 
-## Oral Code Walkthroughs
+## Quizzes
 
-Twice during the semester you'll spend 5–10 minutes in class walking the instructor
-through one of your builds: how it works, and *why you (or the agent) did it that
-way*. The goal is durable learning. If you can't explain what the agent built, you
-don't yet own it.
+There will be **13 short quizzes**, one at the start of every class from Week 2
+on (check the [schedule](schedule.qmd)). Quizzes are **handwritten** on paper,
+with no devices or notes. They are **conceptual**: they test whether you
+understand the ideas from the previous week (what a token is, what a commit
+records, why an agent shouldn't retype your data), not whether you can write code
+from memory.
 
-## Team Project
+Quizzes are **short** (10 minutes) and are designed to test for fluency and to
+demonstrate where additional study is needed. Your **lowest two are dropped**. If
+you do poorly on one or two, use that as feedback on where you need additional
+improvement.
 
-Throughout the semester you'll work in **teams of 3–4** on an open-ended project of
-your own design — the one piece of fully open-ended work in the course. It is
-broken into milestone deliverables (proposal, interim report, final report,
-presentation). See the [project overview](project/0-overview.qmd) for details.
+**The best way to ensure you do well on quizzes is to be active in class and
+complete your builds on time.**
+
+**Make up quizzes are not available**. If you arrive late, you can take the quiz
+in the remaining time left, but you will not be given additional time. Make ups
+will only be allowed for excused absences that are discussed and agreed upon with
+the professor _prior_ to class. If you contact the professor after class for a
+make up, it will not be granted unless a true emergency prevented you from
+attending class that could not have been communicated earlier.
+
+> **Why quiz at all?** Research shows that giving small quizzes throughout a class
+> can dramatically help with *retention*. It's a phenomenon known as the
+> "retrieval effect" - basically, you have to _practice_ remembering things,
+> otherwise your brain won't remember them. The phenomenon and research on it is
+> explained in detail in the book
+> ["Make It Stick: The Science of Successful Learning,"](https://www.hup.harvard.edu/catalog.php?isbn=9780674729018)
+> by Brown, Roediger, and McDaniel.
+
+## Builds
+
+Each week from Week 1 through Week 13 there is a take-home **build**: you use that
+week's concept to make something on your own. There are 13 builds in total, and
+your **lowest build score is dropped**.
+
+Every build is submitted as a GitHub repository that includes:
+
+- the build itself (from Week 5 on, the code that renders your artifact, not
+  just the artifact);
+- the **transcript** of your work with the AI (your prompts, its responses, and
+  your iterations);
+- from Build 5 on, a short **token usage report** (we'll learn how to measure this
+  in Week 5).
+
+Builds are graded on a 0 / 0.5 / 1 scale using the [build rubric](#build-rubric).
+You may discuss approaches with your classmates, but every build is your own work.
+
+## Final Project
+
+The final project is **individual**: everyone builds their own project of their
+own design, using the workflow and the kinds of things we've built during the
+semester. We introduce the project in Week 8 so you have time to think about it.
+There are two deliverables:
+
+- **Proposal** (due Oct 27). A short, high-level description of what you want to
+  build. It's graded for completion (1 if you submit it, 0 if you don't). Its
+  purpose is to get you feedback early on whether your idea is a good one and
+  whether it's well scoped.
+- **Final submission** (due Dec 8). A link to a GitHub repository with your
+  project and all of its source files, your transcripts, a token usage report,
+  and a **5-minute video** about your project posted to YouTube. In Week 15 we'll
+  learn to build slide decks, which you can use in your video. Graded 0 / 0.5 / 1
+  using the [final project rubric](#final-project-rubric).
+
+I'll grade the projects before the final exam, and we'll start the exam period by
+showcasing a few of them. View the [final project overview](project/0-overview.qmd)
+page for more details.
+
+## Final Exam
+
+There will be a **handwritten final exam** during the final exam period (date set
+by the registrar). Like the quizzes, it is conceptual and done on paper with no
+devices or notes, and it covers material from the entire semester. We'll start
+the exam period with the final project showcase, then take the exam.
 
 # Grading
+
+::: {.callout-warning}
+The weights and rubrics below are a draft and may change before the semester
+starts.
+:::
+
+## Category Breakdown
 
 Final grades will be calculated as follows:
 
 <div style="width:650px">
 
-Item | Weight | Notes
------|--------|----------------------------------
-Individual Builds (11) | 40% | Lowest dropped; 10 builds × 4%; one resubmission allowed
-Oral Code Walkthroughs (2) | 10% | 2 × 5%, in class
-Team Project: Proposal | 5% | Teams of 3–4 (Oct 13)
-Team Project: Interim Report | 10% | (Nov 10)
-Team Project: Final Report | 15% | (Dec 1)
-Final Presentation | 10% | (Final exam slot)
-Participation / Attendance | 10% | Yes, attendance is taken
+Item                        | Weight | Notes
+----------------------------|--------|-------------------------------------
+Participation / Attendance  | 5%     | (Yes, I take attendance)
+Builds (13)                 | 25%    | 0 / 0.5 / 1 each, lowest dropped
+Quizzes (13)                | 25%    | Handwritten, lowest two dropped
+Final Project: Proposal     | 2%     | Graded for completion (1 / 0)
+Final Project: Final        | 13%    | 0 / 0.5 / 1, individual
+Final Exam                  | 30%    | Handwritten, cumulative
 
 </div>
 
-## AI Tools and Cost
+## How Builds Are Graded
 
-You'll need an AI coding agent for this course, and the most economical option is a
-**subscription of about $20/month**:
+I want to be upfront about this: **most of the build grading is done by Claude.**
+For each build, Claude reads your repository, your transcript, and your token
+report, checks your work against the rubric below, and drafts a score and
+feedback. I review those drafts and make the final call. If you think a grade is
+wrong, ask for a [re-grade](#re-grades) and I'll look at it myself.
 
-- **[Claude Pro](https://claude.ai/login?plan=pro)** (for Claude Code), or
-- **[ChatGPT Plus](https://chatgpt.com/pricing)** (for Codex).
+This is also why your transcript matters so much. It's the record of how you
+worked: what you asked for, what you checked, and what you changed.
 
-Choose one. You're welcome to use a different agentic coding tool instead (e.g.,
-Gemini CLI, GitHub Copilot, OpenCode), since the underlying skills transfer, but
-in-class instruction will use Claude Code and Codex.
+## Build Rubric {#build-rubric}
 
-**Why a subscription and not the API?** Agentic coding burns a lot of tokens.
-Paying per token through an API would cost *far* more than a flat monthly
-subscription. We recommend a subscription for exactly that reason. I recognize that
-$20/month is a real cost. We are pursuing institutional access, so check Slack
-before you pay, and let me know if the cost is a barrier.
+<div style="width:750px">
 
-**API access for Meetings 10–11.** A subscription does not include API access, and
-we'll call LLMs from Python code with [chatlas](https://posit-dev.github.io/chatlas/)
-in those meetings. You can do this at no cost with a free-tier or local model, or by
-loading about **$5** of credit on a provider's API and using a small model. The
-course materials work with any provider. We'll go over the options in class before
-Meeting 10.
+Score | Meaning | What it looks like
+------|---------|--------------------------------------------------------------
+**1** | Complete | Every required part of the build is there and works. From Build 5 on, the artifact is built by code in your repo, and anyone could re-run that code to get it back. Your transcript is included and shows you directing the agent, reviewing its work, and iterating. You made the commits yourself, in reasonable steps, with messages that say what changed. From Build 5 on, your token usage report is included.
+**0.5** | Partial | A real attempt, but something important is missing or broken. For example: a required part is missing, the artifact doesn't run or render, the transcript or token report is missing, the agent made the commits, or all the work is in one giant commit.
+**0** | Missing | Nothing submitted, or no real attempt (e.g., the submission has nothing to do with the assignment).
 
-## Generative-AI Use Policy
+</div>
 
-Using AI agents is not "cheating" in this course — **it is the core skill being
-taught.** Using the language of the
-[MIT report on AI and education](https://aiandeducation.mit.edu/report/), the policy
-for individual builds is **required use of generative AI**: you must use an agentic
-coding tool and submit your full conversation history. You remain fully responsible
-for the correctness, quality, and originality of everything you submit: read what
-the agent produces, run it, and fix it when it's wrong.
+## Final Project Rubric {#final-project-rubric}
 
-There are two **AI-free exceptions**, each with a reason:
+The final project is graded on **effort**: did you take on a real project and see
+it through?
 
-- **Meeting 1 and Build 1 (Git by hand).** You can't supervise an agent that uses
-  Git until you can use Git yourself.
-- **Reading reflections.** These are written in your own words, because the point is
-  your own thinking about the reading.
+<div style="width:750px">
 
-Other course commitments:
+Score | Meaning | What it looks like
+------|---------|--------------------------------------------------------------
+**1** | Strong effort | The project is ambitious for its scope (including any changes we agreed on from your proposal feedback) and it's finished. The artifacts are built from source files in your repo using the agent → code → artifact workflow. The 5-minute video clearly shows what you made, how you made it, and what you learned. Transcripts and a token usage report are included.
+**0.5** | Some effort | The project is submitted but is small for its scope, mostly unfinished, or doesn't build from the repo, **or** one of the deliverables (repo, video, transcripts, token report) is missing.
+**0** | Missing | Nothing submitted, or minimal effort.
 
-- **No AI detectors.** We do not use AI-detection software, which is unreliable.
-  The evidence of your process is your conversation logs and your Git history.
-- **Instructor disclosure.** I use AI in preparing course materials and in drafting
-  grading feedback, and I review everything before you see it.
-- **Log privacy.** Conversation logs are seen only by the course staff and used only
-  for grading. Remove API keys, passwords, and personal data from your logs before
-  you submit them.
-- **Responsible use.** We'll discuss failure modes, ethics, environmental cost, and
-  when *not* to use AI throughout the course.
+</div>
 
-Detailed disclosure requirements appear in each assignment.
+## Grading Scale
+
+<div style="width:400px">
+Grade  | Range       | Grade | Range
+-------|-------------|-------|------------
+A      | 94 - 100%   | C     | 74 - 76.99%
+A-     | 90 - 93.99% | C-    | 70 - 73.99%
+B+     | 87 - 89.99% | D+    | 67 - 69.99%
+B      | 84 - 86.99% | D     | 64 - 66.99%
+B-     | 80 - 83.99% | D-    | 60 - 63.99%
+C+     | 77 - 79.99% | F     | < 60%
+</div>
+
+The course instructors may choose to change the scales at their discretion. You
+are guaranteed that your letter grade will never become worse as a result of
+changing scales.
+
+## Rounding
+
+**I do not round final grades**. Here's why. Wherever the line is drawn, there
+will always be students just below or just above, and rounding will only move that
+bar and create another group of students who are just below and just above.
+Rounding does not eliminate the issue but rather just shifts it to another group
+of students. This is why I draw the lines before the course starts - to ensure a
+fair and transparent system for everyone, that way you don't have to shoot for a
+moving bar. To be clear, this means I will not modify or round your final score,
+even if you're _very close_ to a different letter grade (e.g., a 93.98 is an "A-"
+and will not be rounded up to an "A").
+
+Rather than round, I grade generously throughout the semester. For example, if you
+give a quiz your best shot and completely fail it, you will likely get a 50%
+instead of a 0%. The 50% is for trying as learning still happens when you try
+regardless if you get the question correct (0s are reserved for those who simply
+don't attempt it).
+
+# AI Tools and Cost
+
+You'll need two things that aren't free: an AI coding agent and, starting in
+Week 7, an API key for generating images. **Check Slack before you pay for
+anything.** We are pursuing institutional access, and I'll post there if we get
+it. If the cost is a barrier for you, let me know.
+
+## An AI coding agent (about $20/month)
+
+I will use and teach [Claude Code](https://code.claude.com/docs/en/quickstart) in
+class, which requires at least a [Claude Pro](https://claude.ai/login?plan=pro)
+subscription (about $20/month). You're welcome to use an alternative, such as
+[Gemini CLI](https://github.com/google-gemini/gemini-cli) (free with a Google
+account) or [Codex](https://github.com/openai/codex) (needs a paid ChatGPT plan).
+The underlying skills transfer, but in-class instruction and course materials
+assume Claude Code, so you're on your own for translating anything tool-specific.
+
+**Why a subscription and not the API?** Agents burn through a lot of tokens.
+Paying per token through an API would cost far more than a flat monthly
+subscription.
+
+## An image-generation API key (Week 7 on)
+
+We don't use Claude to make images. Starting in Week 7, your agent will call
+Google's image model (Nano Banana) through the
+[Gemini API](https://ai.google.dev/gemini-api/docs/image-generation). This is paid
+per image, but if you're careful it should only add up to a few dollars over the
+semester. We'll set up API keys in class, including how to keep them secret
+(never in your code, never in a commit).
+
+# Getting Help
+
+This class can be challenging - **do not suffer in silence!** We have lots of ways
+to get help.
+
+## Slack
+
+All course communication will be managed through
+[Slack]({{< var slack >}}){target="_blank"}.
+
+**You can use Slack to**:
+
+- Ask general questions.
+- Ask for help with a build.
+- Send direct, private messages to each other or the instructors (just like
+  email...but better!)
+
+> **Asking for help on Slack**: You can post questions on slack and receive quick
+> responses. This also enables other students to see answers to common questions.
+> Be specific - if something isn't working, **include what you asked the agent,
+> what it did, and any error message** in your question.
+
+## AMA Hours
+
+I will hold regular "Ask Me Anything" hours each week. The specific hours will be
+posted on the course slack. During this period, you can come to my office (SEH
+2830) and ask me anything. And I mean anything. Most of the time you may just have
+a question related to class, but I am also happy to discuss anything else with you
+regarding life, important decisions, career, art, music, dance, etc.
+
+If the AMA hours don't work with your schedule, you can always schedule a zoom
+call with me using [this link](https://jhelvy.appointlet.com/b/professor-helveston).
+I'm available most days of the week.
+
+## Library Services
+
+While the University Library is not a stand in for TAs, you can schedule a
+consultation for general help with Coding, Programming, Data, Statistical, and
+GIS. See more at https://academiccommons.gwu.edu/writing-research-help
 
 # Course Policies
 
-> *Detailed policies — late work, re-grades, academic integrity, attendance
-> thresholds, and university-required statements (DSS, religious holidays, CAPS,
-> nondiscrimination, recording) — will be merged in here from the working
-> syllabus draft (`class-factory.md`).*
+## tl;dr
+
+- BE NICE
+- BE ON TIME
+- BE HONEST
+- DON'T CHEAT
+- SERIOUSLY: DON'T CHEAT
+
+## Late Policy
+
+Each student is allowed **3** late build submissions - use them however you want,
+no questions asked.
+These are meant to cover illness, family emergencies, and religious holidays.
+
+Beyond those, all other assignments are due by 11:59pm on the assigned due date
+unless specified otherwise. Assignments submitted up to 24 hours past this
+deadline will be graded to a max of half credit (0.5 on the 0 / 0.5 / 1 scale).
+Assignments submitted beyond 24 hours past the deadline will not be graded and
+will be assigned a 0. The final project cannot use a late submission, since I need
+time to grade the projects before the final exam.
+
+If you need a special accommodation such as due to an illness, family emergency,
+or religious holidays, contact the instructor ahead of time.
+
+## Re-grades
+
+You may request a re-grade within 7 days of receiving a grade, including any grade
+that Claude drafted. Send me a message on Slack with the assignment name and what
+you think was graded incorrectly and why. I'll review your submission against the
+rubric myself. If I find an error, I'll fix the grade. If not, the original grade
+stands.
+
+## Use of AI
+
+Using AI in this course is **required**. It's the core skill being taught. Every build and the final project must be made with AI, and
+you must submit your transcripts.
+
+Now, LLMs are pretty good, but sometimes they suck. **Don't blindly trust them** -
+they will betray you. You are fully responsible for everything you submit, so
+read what the agent produces, run it, look at the result, and fix it when it's
+wrong. That's what the verification loops we learn in Week 8 are for.
+
+There are three places where AI is **not** allowed, each for a reason:
+
+- **Week 1 and Build 1 (Git by hand).** You can't supervise an agent that changes
+  your files until you understand version control yourself.
+- **Git, all semester.** The agent never makes commits for you (see
+  [You control Git](#you-control-git)). Your commits are how you show that you
+  reviewed what the agent did.
+- **Quizzes and the final exam.** These are handwritten, with no devices, because
+  they test what *you* understand.
+
+Your transcripts are read by Claude (for grading) and by me, and are used only
+for grading this course. Before you submit, remove API keys, passwords, and any
+personal information from them.
+
+I don't use AI-detection software (it's unreliable). The record of your work is
+your transcript and your Git history. I also use AI myself, to help prepare course
+materials and to draft build grades and feedback, and I review everything before
+you see it.
+
+Throughout the course we'll talk about where AI fails, what it costs (in money and
+energy), copyright and authorship, and when *not* to use it.
+
+> Curious how LLMs actually work? That's Week 2. If you want a head start, check
+> out [this article](https://www.understandingai.org/p/large-language-models-explained-with),
+> which provides a simplified description of how they work (which itself is still
+> quite complicated).
+
+## Cheating
+
+Cheating results in a penalty on the first offense, and failing the course on the
+second offense. Cheating on builds and the final project can include:
+
+- Submitting someone else's work or transcript as your own, in any amount.
+- Editing a transcript to hide or fake what happened. (Removing secrets and
+  personal information is fine and expected.)
+- Providing your builds or transcripts to anyone else in the class.
+- Putting solutions to course assignments online.
+- Getting someone else to do the assignment for you.
+
+Cheating on quizzes or the final exam can include:
+
+- Referring to any external resources while completing it (phones, notes, AI
+  tools, etc.).
+- Copying part of an answer off of another student's paper, even if it is very
+  small.
+- Using solutions provided by students who previously took the course.
+
+### Penalties
+
+Violations will be reported to the
+[Office of Student Rights & Responsibilities](https://studentconduct.gwu.edu/charging-academic-integrity-violations).
+Penalties are decided by the course instructors, and can vary based on the
+severity of the offense. Possible penalties include:
+
+- Receiving a 0 on the assignment/quiz in question.
+- Receiving a full letter grade deduction in the course.
+- Automatically failing the course.
+
+Depending on the student's prior academic history, violations may also be
+accompanied by a letter to the Dean of Student Affairs, again at the instructors'
+discretion. This can lead to university-level penalties, such as being suspended
+or expelled.
+
+### Grace Period
+
+College is a time when you do a lot of learning. Sometimes, you might make bad
+decisions or mistakes. The most important thing for you to do is to learn from
+your mistakes, to constantly grow, and become a better person.
+
+Sometimes, students panic and copy someone else's work right before the deadline,
+then regret what they did afterwards. Therefore, you may rescind any build
+submission for up to 24 hours after the deadline with no questions asked. Simply
+message the course instructors asking to delete the submission in question, and we
+will do so. Deleted submissions will not be graded. However, it will always be
+better to get a 0 (or partial credit) on an assignment than to get a cheating
+violation!
+
+```{r child = here::here("fragments", "other-policies.qmd")}
+```

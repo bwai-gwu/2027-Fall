@@ -1,0 +1,12 @@
+---
+title: "What Is Generative AI? & Version Control"
+params:
+  class: "1-ai-and-git"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

@@ -1,0 +1,12 @@
+---
+title: "Data Injection"
+params:
+  class: "11-data-injection"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

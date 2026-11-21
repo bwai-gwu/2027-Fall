@@ -7,8 +7,12 @@ execute:
   message: false
 ---
 
-All assignments are due by 11:59pm on the due date. Dates are tentative and will
-be confirmed against the official Fall 2027 academic calendar.
+All assignments are due by 11:59pm on the due date. Each week pairs a
+**Concept** (the idea we learn) with a **Building** (the kind of thing we
+make, which can span several weeks); the **Build** is that week's take-home
+assignment. Quizzes are handwritten, given at the start of class, and cover the
+week(s) listed. Dates are tentative and will be confirmed against the official
+Fall 2027 academic calendar.
 
 ```{r}
 # NOTE: The schedule.lua file is inserted as a filter in _quarto.yml to
@@ -18,21 +22,27 @@ be confirmed against the official Fall 2027 academic calendar.
 source("_common.R")
 
 schedule <- get_schedule()
-names(schedule) <- str_to_title(names(schedule))
+
 done <- schedule %>%
-  rename(
-      `Trust Level` = Theme,
-      `Team Project` = Project,
-      `Build (Individual)` = Assign
-  ) %>%
   select(
-      Week, Date = Date_md, `Trust Level`, Class, `Build (Individual)`,
-      `Team Project`
+    Week = week,
+    Date = date_md,
+    Quiz = quiz,
+    Concept = class,
+    Building = building,
+    Build = assignments,
+    Project = project
   ) %>%
-  kable(format = 'html', escape = FALSE,
-        align = c('c', 'c', 'c', 'l', 'l', 'l')) %>%
-  kable_styling(full_width = F, bootstrap_options = c("striped", "hover")) %>%
-  column_spec(column = 4, width = '22em')
+  kable(
+    format = 'html',
+    escape = FALSE,
+    align = c('c', 'c', 'l', 'l', 'l', 'l', 'l')
+  ) %>%
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover")) %>%
+  column_spec(column = 1, width = '2em') %>%
+  column_spec(column = 2, width = '3em') %>%
+  column_spec(column = 4, width = '20em') %>%
+  column_spec(column = 6, width = '12em')
 
 done
 ```

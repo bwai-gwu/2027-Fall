@@ -7,18 +7,20 @@ project:
   render:
     - "*.qmd"
     - "!fragments/"
-    - "!class/1-git-github-pages/"
+    - "!class/1-ai-and-git/"
     - "!class/2-how-llms-work/"
     - "!class/3-agents/"
-    - "!class/4-context-engineering/"
-    - "!class/5-planning-and-memory/"
+    - "!class/4-web-and-pages/"
+    - "!class/5-context-and-quarto/"
     - "!class/6-skills/"
-    - "!class/7-verification/"
-    - "!class/8-continuous-integration/"
-    - "!class/9-data-analysis/"
-    - "!class/10-llm-apis/"
-    - "!class/11-mcp/"
-    - "!class/12-multi-agent/"
+    - "!class/7-apis-and-images/"
+    - "!class/8-verification/"
+    - "!class/9-animation/"
+    - "!class/10-sound/"
+    - "!class/11-data-injection/"
+    - "!class/12-html-to-pdf/"
+    - "!class/13-data-viz/"
+    - "!class/14-presentations/"
   resources:
     - "class/"
     - "hw/"
@@ -29,7 +31,7 @@ website:
   site-url: https://jhelvy.github.io/intro-to-agentic-engineering/
   repo-url: https://github.com/jhelvy/intro-to-agentic-engineering
   repo-actions: [edit, issue]
-  description: 'Course website for the Fall 2027 semester of the EMSE course "Build with AI: An Introduction to Agentic Engineering" at GWU'
+  description: 'Course website for the Fall 2027 semester of the EMSE course "Build with AI" at GWU'
   search: true
   sidebar:
     style: "docked"
@@ -46,44 +48,44 @@ website:
       - text: Schedule
         icon: table
         href: schedule.qmd
-      - section: Builds (Individual)
+      - section: Builds
         icon: hammer
         contents:
           - text: "1: Git Warm-Up"
             href: hw/1-git-warmup.qmd
           - text: "2: Probe the Model"
             href: hw/2-probe-the-model.qmd
-          - text: "3: Personal Website"
-            href: hw/3-personal-website.qmd
-          - text: "4: Ingestion (Review or Novel)"
-            href: hw/4-ingestion.qmd
-          - text: "5: Recreate an App"
-            href: hw/5-recreate-app.qmd
-          - text: "6: Video Game"
-            href: hw/6-video-game.qmd
-          - text: "7: Review Harness"
-            href: hw/7-review-harness.qmd
-          - text: "8: Cloud Robot"
-            href: hw/8-cloud-robot.qmd
-          - text: "9: Agentic Data Analysis"
-            href: hw/9-data-analysis.qmd
-          - text: "10: AI-Powered Tool"
-            href: hw/10-ai-tool.qmd
-          - text: "11: MCP Server"
-            href: hw/11-mcp-server.qmd
-      - section: Team Project
-        icon: people-fill
+          - text: "3: Personal Site"
+            href: hw/3-personal-site.qmd
+          - text: "4: Deploy Your Site"
+            href: hw/4-deploy-site.qmd
+          - text: "5: Quarto Site"
+            href: hw/5-quarto-site.qmd
+          - text: "6: Voice Skill"
+            href: hw/6-voice-skill.qmd
+          - text: "7: Image Generation"
+            href: hw/7-image-generation.qmd
+          - text: "8: Consistent Image Set"
+            href: hw/8-image-set.qmd
+          - text: "9: Animated Explainer"
+            href: hw/9-animation.qmd
+          - text: "10: Song or Sound Pack"
+            href: hw/10-sound.qmd
+          - text: "11: Restaurant Menu Site"
+            href: hw/11-menu-site.qmd
+          - text: "12: Restaurant Menu PDF"
+            href: hw/12-menu-pdf.qmd
+          - text: "13: Data Story"
+            href: hw/13-data-story.qmd
+      - section: Final Project
+        icon: rocket-takeoff-fill
         contents:
           - text: Overview
             href: project/0-overview.qmd
           - text: Proposal
             href: project/1-proposal.qmd
-          - text: Interim Report
-            href: project/2-interim-report.qmd
-          - text: Final Report
-            href: project/3-final-report.qmd
-          - text: Final Presentation
-            href: project/4-presentation.qmd
+          - text: Final Project
+            href: project/2-final.qmd
       - text: Software & Setup
         icon: download
         href: software.qmd

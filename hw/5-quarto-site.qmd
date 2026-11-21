@@ -1,0 +1,18 @@
+---
+title: "Build 5: Quarto Site"
+params:
+  number: 5
+  purpose: "Rebuild your personal site as a Quarto website with a blog, using the agent → code → artifact workflow, and report how many tokens it took."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+## The Build
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

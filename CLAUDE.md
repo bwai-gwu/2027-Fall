@@ -4,28 +4,33 @@ Project guidance for working on this repository.
 
 ## What this is
 
-The course website for **EMSE 4197: Build with AI: An Introduction to Agentic
-Engineering** (Fall 2027, GWU), built with [Quarto](https://quarto.org/). It is in active
+The course website for **EMSE 4197: Build with AI** (Fall 2027, GWU), built with [Quarto](https://quarto.org/). It is in active
 development — most weekly slide decks and assignment briefs are still placeholders.
 
 ## Source of truth (read these first)
 
-- **`planned-updates.md`** — the **current** plan: the undergraduate re-scope
-  (EMSE 4197, Fall 2027, Python), the 14-meeting schedule, builds and readings,
-  assessment, AI/cost policy, and MIT-report alignment. **Start here.** Where it
-  conflicts with `course-plan.md`, this wins.
-- **`course-plan.md`** — the original graduate design (EMSE 6992, Spring 2027):
-  course thesis, "dual spine" and "trust gradient" framing, decisions log. Still
-  the source for anything `planned-updates.md` doesn't mention.
-- **`class-factory.md`** — the original syllabus seed. Logistics and university
-  policies still need to be merged from here into `syllabus.qmd`.
+- **`planned-updates.md`**: the **current** plan, a workshop-style "make
+  things with AI" course built on the agent → code → artifact workflow. It covers
+  the concept / building / build schedule, Git-by-hand policy (GitHub Desktop,
+  students make every commit), assessment (0 / 0.5 / 1 builds, weekly
+  handwritten quizzes, handwritten final, individual final project), and open
+  items. **Start here.** It overrides `course-plan.md` everywhere.
+- **`course-plan.md`**: the original graduate design (EMSE 6992, Spring 2027).
+  Background only. Its agentic-engineering framing, team project and trust
+  gradient were dropped.
+- **`class-factory.md`**: the original syllabus seed, kept for reference. The
+  syllabus policies now come from the EDA Fall 2026 site
+  (`~/gh/teaching/EDA/2026-Fall`), including `fragments/other-policies.qmd`.
 
 ## Key conventions
 
 - **The schedule is data-driven.** Edit `schedule.csv` to change the calendar;
   `_common.R` (`get_schedule()`) builds the HTML table columns and
   `schedule.lua` is a Pandoc filter for table widths. Don't hand-edit the table
-  in `schedule.qmd`.
+  in `schedule.qmd`. The structure follows P4A's `_common.R`: `quiz` /
+  `quiz_coverage`, the class columns (the *Concept*), `building` (the kind of
+  artifact, which can span weeks), the build columns, and the final-project
+  columns. `week` is the calendar week, so Thanksgiving is week 14.
 - **`fragments/`** holds reusable snippets included via
   `` ```{r child = here::here("fragments", "X.qmd")} ``. `placeholder.qmd` is the
   "Coming soon!" stub used wherever content isn't written yet.

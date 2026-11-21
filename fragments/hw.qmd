@@ -11,15 +11,14 @@ due <- get_schedule() %>%
 
 > **Due**: `r due`
 >
-> **Weight**: This build is worth 4% of your final grade (11 builds, lowest
-> dropped, 10 × 4% = 40%).
+> **Grading**: Graded 0 / 0.5 / 1 using the
+> [build rubric](../syllabus.qmd#build-rubric). Together, the builds are worth
+> 25% of your final grade (lowest build dropped).
 >
 > **Purpose**: `r params$purpose`
 >
-> **Deliverable**: A GitHub repository containing your build **and the full
-> conversation history** with the agent (your prompts, the agent's responses,
-> and your iterations), plus a short **reading reflection** on this build's
-> assigned reading. Grading weighs the clarity of your prompts, evidence of
-> iterative collaboration, the quality of the final product, and thoughtful use
-> of this week's workflow skill. Scrub API keys and personal data from your logs
-> before submitting.
+> **Deliverable**: A GitHub repository with your build and the **transcript** of
+> your work with the AI (your prompts, its responses, and your iterations). From
+> Build 5 on, also include a **token usage report**. Make every commit yourself
+> in GitHub Desktop: never let the agent commit for you. Scrub API keys and
+> personal data from transcripts before submitting.

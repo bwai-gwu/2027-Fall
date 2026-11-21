@@ -1,0 +1,30 @@
+---
+title: "Final Project"
+params:
+  number: 2
+  weight: "13%"
+  purpose: "Build something of your own design using the agent → code → artifact workflow, and show it off in a 5-minute video."
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "project.qmd")}
+```
+
+## Deliverables
+
+- A link to a **GitHub repository** containing your project and all of its
+  source files.
+- A **5-minute video** about your project, posted to YouTube.
+- Your **agent transcripts** and a **token usage report**.
+
+The final project is graded 0 / 0.5 / 1 using the
+[final project rubric](../syllabus.qmd#final-project-rubric). A few projects will
+be showcased at the start of the final exam.
+
+## Details
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

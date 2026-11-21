@@ -1,0 +1,12 @@
+---
+title: "APIs & Keys"
+params:
+  class: "7-apis-and-images"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```

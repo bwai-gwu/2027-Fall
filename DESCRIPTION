@@ -1,6 +1,6 @@
 Type: Website
 Package: agenticeng
-Title: Build with AI - An Introduction to Agentic Engineering
+Title: Build with AI
 Version: 0.1.0
 Authors@R: c(
     person(given   = "John",

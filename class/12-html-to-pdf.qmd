@@ -1,0 +1,12 @@
+---
+title: "Designing for Print"
+params:
+  class: "12-html-to-pdf"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```
