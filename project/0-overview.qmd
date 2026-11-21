@@ -1,0 +1,36 @@
+---
+title: "Team Project Overview"
+toc: true
+toc-location: right
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+The team project is the capstone of the course — and the only piece of fully
+open-ended work. In teams of **3–4**, you'll propose and build an ambitious,
+real-world project of your own design, applying every workflow skill from the
+semester: version control, planning, skills, verification, continuous integration,
+deployment, LLM APIs, MCP, and (where it helps) multi-agent orchestration.
+
+Teams form in Meeting 5. From Meeting 9 on, the last ~45 minutes of each class is
+**team studio time**, where the instructor checks in with each team. The final two
+meetings are dedicated studio sessions, and we learn collaboration workflows (pull
+request reviews, issues, and parallel agents in git worktrees) live in Meeting 12.
+
+**Summary of deliverables:**
+
+<div style="width:500px">
+
+Item | Weight | Due
+-----|--------|-----------------
+[Proposal](1-proposal.qmd) | 5% | Oct 13 (Meeting 8)
+[Interim Report](2-interim-report.qmd) | 10% | Nov 10 (Meeting 12)
+[Final Report](3-final-report.qmd) | 15% | Dec 1 (Meeting 14)
+[Final Presentation](4-presentation.qmd) | 10% | Final exam slot (date TBD)
+
+</div>
+
+```{r child = here::here("fragments", "placeholder.qmd")}
+```
