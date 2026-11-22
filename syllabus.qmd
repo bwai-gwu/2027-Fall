@@ -89,7 +89,7 @@ Go to the course [Software page](software.qmd) for detailed instructions on how 
 
 **Attendance will be taken** and will be part of your participation grade. In-person attendance is critical as we will spend most of class building things together. You should plan to attend class in person each week.
 
-**There will be no option for remote attendance (e.g. zoom)**, and class sessions will not be recorded. If you have any questions or need special accommodations, send me a message on slack and we can discuss. If you must miss class for an excused absence (e.g. medical issue), please message Professor Helveston and get notes from your fellow classmates.
+**There will be no option for remote attendance (e.g. zoom)**, and class sessions will not be recorded. If you have any questions or need special accommodations, send the teaching team a message on slack and we can discuss. If you must miss class for an excused absence (e.g. medical issue), please message Professor Helveston and get notes from your fellow classmates.
 
 Multiple absences, inappropriate or unprofessional behavior during class (such as monopolizing discussions or being rude or disruptive), not participating in classroom exercises, and not being prepared for class will result in a poor score for attendance and participation.
 
@@ -109,7 +109,7 @@ Quizzes are **short** (10 minutes) and are designed to test for fluency and to d
 
 Each week from Week 1 through Week 13 there is a take-home **build**: you use that week's concept to make something on your own. There are 13 builds in total, and your **lowest build score is dropped**.
 
-Every build is submitted in its own folder (`build1`, `build2`, etc.) in your **course repo**, a private GitHub repo that I create for each of you in the [class GitHub organization]({{< var gitorg >}}). The repo name is your GW netID, so it will be viewable at `https://github.com/bwai-f27/netID`, replacing `netID` with your GW netID. Each build folder includes:
+Every build is submitted in its own folder (`build1`, `build2`, etc.) in your **course repo**, a private GitHub repo that the teaching team creates for each of you in the [class GitHub organization]({{< var gitorg >}}). The repo name is your GW netID, so it will be viewable at `https://github.com/bwai-f27/netID`, replacing `netID` with your GW netID. Each build folder includes:
 
 - the build itself.
 - the **transcript** of your work with the AI (your prompts, its responses, and your iterations), saved as `transcript.md`
@@ -124,7 +124,7 @@ The final project is **individual**: everyone builds their own project of their 
 - **Proposal** (due Oct 27). A short, high-level description of what you want to build. It's graded for completion (1 if you submit it, 0 if you don't). Its purpose is to get you feedback early on whether your idea is a good one and whether it's well scoped.
 - **Final submission** (due Dec 8). A link to the GitHub repository with your project and all of its source files, your transcripts, a token usage report, and a **5-minute video** about your project posted to YouTube. In Week 15 we'll learn to build slide decks, which you can use in your video if you wish. Graded 0 / 0.5 / 1 using the [final project rubric](#final-project-rubric).
 
-I'll grade the projects before the final exam, and we'll start the exam period by showcasing a few of them. View the [final project overview](project/0-overview.qmd) page for more details.
+The teaching team will grade the projects before the final exam, and we'll start the exam period by showcasing a few of them. View the [final project overview](project/0-overview.qmd) page for more details.
 
 ## Final Exam
 
@@ -140,7 +140,7 @@ Final grades will be calculated as follows:
 
 Item                        | Weight | Notes
 ----------------------------|--------|-------------------------------------
-Participation / Attendance  | 5%     | (Yes, I take attendance)
+Participation / Attendance  | 5%     | (Yes, we take attendance)
 Builds (13)                 | 25%    | 0 / 0.5 / 1 each, lowest dropped
 Quizzes (13)                | 25%    | Handwritten, lowest two dropped
 Final Project: Proposal     | 2%     | Graded for completion (1 / 0)
@@ -161,7 +161,7 @@ If you think a grade is wrong, ask for a [re-grade](#re-grades) and the teaching
 
 ## Build Rubric {#build-rubric}
 
-<div style="width:750px">
+<div style="width:100%">
 
 Score | Meaning | What it looks like
 ------|---------|--------------------------------------------------------------
@@ -175,7 +175,7 @@ Score | Meaning | What it looks like
 
 The final project is graded on **effort**: did you take on a real project and see it through?
 
-<div style="width:750px">
+<div style="width:100%">
 
 Score | Meaning | What it looks like
 ------|---------|--------------------------------------------------------------
@@ -202,17 +202,17 @@ The course instructors may choose to change the scales at their discretion. You 
 
 ## Rounding
 
-**I do not round final grades**. Here's why. Wherever the line is drawn, there will always be students just below or just above, and rounding will only move that bar and create another group of students who are just below and just above. Rounding does not eliminate the issue but rather just shifts it to another group of students. This is why I draw the lines before the course starts - to ensure a fair and transparent system for everyone, that way you don't have to shoot for a moving bar. To be clear, this means I will not modify or round your final score, even if you're _very close_ to a different letter grade (e.g., a 93.98 is an "A-" and will not be rounded up to an "A").
+**Final grades will NOT be rounded**. This is because wherever the line is drawn, there will always be students just below or just above, and rounding will only move that bar and create another group of students who are just below and just above. Rounding does not eliminate the issue but rather just shifts it to another group of students. This is why we draw the lines before the course starts - to ensure a fair and transparent system for everyone, that way you don't have to shoot for a moving bar. To be clear, this means we will not modify or round your final score, even if you're _very close_ to a different letter grade (e.g., a 93.98 is an "A-" and will not be rounded up to an "A").
 
-Rather than round, I grade generously throughout the semester. For example, if you give a quiz your best shot and completely fail it, you will likely get a 50% instead of a 0%. The 50% is for trying as learning still happens when you try regardless if you get the question correct (0s are reserved for those who simply don't attempt it).
+Rather than round, we grade generously throughout the semester. For example, if you give a quiz your best shot and completely fail it, you will likely get a 50% instead of a 0%. The 50% is for trying as learning still happens when you try regardless if you get the question correct (0s are reserved for those who simply don't attempt it).
 
 # AI Tools and Cost
 
-You'll need two things that aren't free: an AI coding agent and, starting in Week 7, an API key for generating images. **Check Slack before you pay for anything.** We are pursuing institutional access, and I'll post there if we get it. If the cost is a barrier for you, let me know.
+You'll need two things that aren't free: an AI coding agent and, starting in Week 7, an API key for generating images. **Check Slack before you pay for anything.** We are pursuing institutional access, and we'll post there if we get it. If the cost is a barrier for you, let the teaching team know.
 
 ## An AI coding agent (about $20/month)
 
-I will use and teach [Claude Code](https://code.claude.com/docs/en/quickstart) in class, which requires at least a [Claude Pro](https://claude.ai/login?plan=pro) subscription (about $20/month). You're welcome to use an alternative, such as [Gemini CLI](https://github.com/google-gemini/gemini-cli) (free with a Google account) or [Codex](https://github.com/openai/codex) (needs a paid ChatGPT plan). The underlying skills transfer, but in-class instruction and course materials assume Claude Code, so you're on your own for translating anything tool-specific.
+We will use and teach [Claude Code](https://code.claude.com/docs/en/quickstart) in class, which requires at least a [Claude Pro](https://claude.ai/login?plan=pro) subscription (about $20/month). You're welcome to use an alternative, such as [Gemini CLI](https://github.com/google-gemini/gemini-cli) (free with a Google account) or [Codex](https://github.com/openai/codex) (needs a paid ChatGPT plan). The underlying skills transfer, but in-class instruction and course materials assume Claude Code, so you're on your own for translating anything tool-specific.
 
 **Why a subscription and not the API?** Agents burn through a lot of tokens. Paying per token through an API would cost far more than a flat monthly subscription.
 
@@ -238,9 +238,9 @@ All course communication will be managed through [Slack]({{< var slack >}}){targ
 
 ## AMA Hours
 
-I will hold regular "Ask Me Anything" hours each week. The specific hours will be posted on the course slack. During this period, you can come to my office (SEH 2830) and ask me anything. And I mean anything. Most of the time you may just have a question related to class, but I am also happy to discuss anything else with you regarding life, important decisions, career, art, music, dance, etc.
+The teaching team will hold regular "Ask Me Anything" hours each week. The specific hours will be posted on the course slack. During this period, you can meet with Professor Helveston and ask anything. And we mean anything. Most of the time you may just have a question related to class, but we are also happy to discuss anything else with you regarding life, important decisions, career, art, music, dance, etc. These will likely be held over zoom. 
 
-If the AMA hours don't work with your schedule, you can always schedule a zoom call with me using [this link](https://jhelvy.appointlet.com/b/professor-helveston). I'm available most days of the week.
+If the AMA hours don't work with your schedule, you can always schedule a zoom call with Professor Helveston using [this link](https://jhelvy.appointlet.com/b/professor-helveston). He is available most days of the week.
 
 ## Library Services
 
@@ -251,22 +251,22 @@ While the University Library is not a stand in for TAs, you can schedule a consu
 ## tl;dr
 
 - BE NICE
-- BE ON TIME
 - BE HONEST
+- BE ON TIME
 - DON'T CHEAT
-- SERIOUSLY: DON'T CHEAT
+- DON'T BE AI LAZY
 
 ## Late Policy
 
-Each student is allowed **3** late build submissions - use them however you want, no questions asked. These are meant to cover illness, family emergencies, and religious holidays.
+Each student is allowed **3** late build submissions - use them however you want, no questions asked. These are meant to cover illness, family emergencies, and religious holidays. For each one of these, you can submit a build up to 3 days beyond the deadline and still recieve full credit. 
 
-Beyond those, all other assignments are due by 11:59pm on the assigned due date unless specified otherwise. Assignments submitted up to 24 hours past this deadline will be graded to a max of half credit (0.5 on the 0 / 0.5 / 1 scale). Assignments submitted beyond 24 hours past the deadline will not be graded and will be assigned a 0. The final project cannot use a late submission, since I need time to grade the projects before the final exam.
+Beyond those, all other assignments are due by 11:59pm on the assigned due date unless specified otherwise. Assignments submitted up to 24 hours past this deadline will be graded to a max of half credit (0.5 on the 0 / 0.5 / 1 scale). Assignments submitted beyond 24 hours past the deadline will not be graded and will be assigned a 0. The final project cannot use a late submission, since the teaching team needs time to grade the projects before the final exam.
 
 If you need a special accommodation such as due to an illness, family emergency, or religious holidays, contact the instructor ahead of time.
 
 ## Re-grades
 
-You may request a re-grade within 7 days of receiving a grade, including any grade that the AI agent drafted. Send me a message on Slack with the assignment name and what you think was graded incorrectly and why. I'll review your submission against the rubric myself. If I find an error, I'll fix the grade. If not, the original grade stands.
+You may request a re-grade within 7 days of receiving a grade, including any grade that the AI agent drafted. Send the teaching team a message on Slack with the assignment name and what you think was graded incorrectly and why. The teaching team will review your submission against the rubric personally. If we find an error, we'll fix the grade. If not, the original grade stands.
 
 ## Use of AI
 
@@ -274,15 +274,17 @@ Using AI in this course is **required**. It's the core skill being taught. Every
 
 Now, LLMs are pretty good, but sometimes they suck. **Don't blindly trust them** - they will betray you. You are fully responsible for everything you submit, so read what the agent produces, run it, look at the result, and fix it when it's wrong. That's what the verification loops we learn in Week 8 are for.
 
+This is what we mean when we say "don't be AI lazy." It's easy to hand the reigns of your builds to AI and just submit it. But you'll learn nothing. This class is designed to give you plenty of opportunities to *engage* with the AI tools we will be covering, and to verify their outputs. Just because the AI can write your code for you doens't mean the AI is in charge or correct. You have to harness it. Your work needs to be correct and good, not slop. 
+
 There are three places where AI is **not** allowed, each for a reason:
 
 - **Week 1 and Build 1 (Git by hand).** You can't supervise an agent that changes your files until you understand version control yourself.
 - **Git, all semester.** The agent never makes commits for you (see [You control Git](#you-control-git)). Your commits are how you show that you reviewed what the agent did.
 - **Quizzes and the final exam.** These are handwritten, with no devices, because they test what *you* understand.
 
-Your transcripts are read by Claude (for grading) and by me, and are used only for grading this course. Before you submit, remove API keys, passwords, and any personal information from them.
+Your transcripts are read by Claude (for grading) and by the teaching team, and are used only for grading this course. Before you submit, remove API keys, passwords, and any personal information from them.
 
-I don't use AI-detection software (it's unreliable). The record of your work is your transcript and your Git history. I also use AI myself, to help prepare course materials and to draft build grades and feedback, and I review everything before you see it.
+We don't use AI-detection software (it's unreliable). The record of your work is your transcript and your Git history. We also use AI ourselves, to help prepare course materials and to draft build grades and feedback, and we review everything before you see it.
 
 Throughout the course we'll talk about where AI fails, what it costs (in money and energy), copyright and authorship, and when *not* to use it.
 
