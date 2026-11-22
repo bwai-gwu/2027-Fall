@@ -13,7 +13,8 @@ execute:
 ```{r child = here::here("fragments", "project.qmd")}
 ```
 
-The proposal is graded for **completion** (1 if submitted, 0 if not). Its job is
+Submit your proposal in the `project` folder of your course repo
+(`bwai-f27/bwai-netID`). The proposal is graded for **completion** (1 if submitted, 0 if not). Its job is
 to get you feedback early, not to lock you into a plan.
 
 ## Details

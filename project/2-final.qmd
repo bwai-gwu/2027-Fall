@@ -15,9 +15,11 @@ execute:
 
 ## Deliverables
 
+Submit these in the `project` folder of your course repo (`bwai-f27/bwai-netID`):
+
 - A link to a **GitHub repository** containing your project and all of its
   source files.
-- A **5-minute video** about your project, posted to YouTube.
+- A link to your **5-minute video** about your project, posted to YouTube.
 - Your **agent transcripts** and a **token usage report**.
 
 The final project is graded 0 / 0.5 / 1 using the

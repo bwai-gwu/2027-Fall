@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>FAQ – EMSE 4197</title>
+<title>Frequently Asked Questions – EMSE 4197</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -298,15 +298,51 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">FAQ</h2>
+   
+  <ul>
+  <li><a href="#class-stuff" id="toc-class-stuff" class="nav-link active" data-scroll-target="#class-stuff">CLASS STUFF</a>
+  <ul class="collapse">
+  <li><a href="#i-cant-get-into-the-class-slack" id="toc-i-cant-get-into-the-class-slack" class="nav-link" data-scroll-target="#i-cant-get-into-the-class-slack">I can’t get into the class slack</a></li>
+  <li><a href="#where-can-i-see-my-grades" id="toc-where-can-i-see-my-grades" class="nav-link" data-scroll-target="#where-can-i-see-my-grades">Where can I see my grades?</a></li>
+  <li><a href="#i-cant-find-my-course-repo" id="toc-i-cant-find-my-course-repo" class="nav-link" data-scroll-target="#i-cant-find-my-course-repo">I can’t find my course repo</a></li>
+  <li><a href="#is-claude-really-grading-my-builds" id="toc-is-claude-really-grading-my-builds" class="nav-link" data-scroll-target="#is-claude-really-grading-my-builds">Is Claude really grading my builds?</a></li>
+  <li><a href="#when-can-i-expect-to-see-a-grade-for-my-assignment" id="toc-when-can-i-expect-to-see-a-grade-for-my-assignment" class="nav-link" data-scroll-target="#when-can-i-expect-to-see-a-grade-for-my-assignment">When can I expect to see a grade for my assignment?</a></li>
+  <li><a href="#how-can-i-submit-my-build-late" id="toc-how-can-i-submit-my-build-late" class="nav-link" data-scroll-target="#how-can-i-submit-my-build-late">How can I submit my build late?</a></li>
+  <li><a href="#can-i-make-up-a-quiz-if-im-late-or-miss-class" id="toc-can-i-make-up-a-quiz-if-im-late-or-miss-class" class="nav-link" data-scroll-target="#can-i-make-up-a-quiz-if-im-late-or-miss-class">Can I make up a quiz if I’m late or miss class?</a></li>
+  <li><a href="#do-i-really-need-to-submit-my-transcripts" id="toc-do-i-really-need-to-submit-my-transcripts" class="nav-link" data-scroll-target="#do-i-really-need-to-submit-my-transcripts">Do I really need to submit my transcripts?</a></li>
+  <li><a href="#how-do-i-measure-my-token-usage" id="toc-how-do-i-measure-my-token-usage" class="nav-link" data-scroll-target="#how-do-i-measure-my-token-usage">How do I measure my token usage?</a></li>
+  </ul></li>
+  <li><a href="#ai-stuff" id="toc-ai-stuff" class="nav-link" data-scroll-target="#ai-stuff">AI STUFF</a>
+  <ul class="collapse">
+  <li><a href="#do-i-have-to-pay-for-claude-pro" id="toc-do-i-have-to-pay-for-claude-pro" class="nav-link" data-scroll-target="#do-i-have-to-pay-for-claude-pro">Do I have to pay for Claude Pro?</a></li>
+  <li><a href="#can-i-use-codex-gemini-cli-or-some-other-agent-instead-of-claude-code" id="toc-can-i-use-codex-gemini-cli-or-some-other-agent-instead-of-claude-code" class="nav-link" data-scroll-target="#can-i-use-codex-gemini-cli-or-some-other-agent-instead-of-claude-code">Can I use Codex, Gemini CLI, or some other agent instead of Claude Code?</a></li>
+  <li><a href="#i-hit-my-usage-limit.-what-do-i-do" id="toc-i-hit-my-usage-limit.-what-do-i-do" class="nav-link" data-scroll-target="#i-hit-my-usage-limit.-what-do-i-do">I hit my usage limit. What do I do?</a></li>
+  <li><a href="#why-cant-i-let-the-agent-make-commits-for-me" id="toc-why-cant-i-let-the-agent-make-commits-for-me" class="nav-link" data-scroll-target="#why-cant-i-let-the-agent-make-commits-for-me">Why can’t I let the agent make commits for me?</a></li>
+  <li><a href="#the-agent-says-its-done-but-it-doesnt-work" id="toc-the-agent-says-its-done-but-it-doesnt-work" class="nav-link" data-scroll-target="#the-agent-says-its-done-but-it-doesnt-work">The agent says it’s done, but it doesn’t work</a></li>
+  <li><a href="#the-agent-broke-something-that-used-to-work" id="toc-the-agent-broke-something-that-used-to-work" class="nav-link" data-scroll-target="#the-agent-broke-something-that-used-to-work">The agent broke something that used to work</a></li>
+  <li><a href="#i-accidentally-committed-my-api-key" id="toc-i-accidentally-committed-my-api-key" class="nav-link" data-scroll-target="#i-accidentally-committed-my-api-key">I accidentally committed my API key!</a></li>
+  <li><a href="#why-do-we-build-things-through-code-instead-of-just-asking-the-ai-for-them" id="toc-why-do-we-build-things-through-code-instead-of-just-asking-the-ai-for-them" class="nav-link" data-scroll-target="#why-do-we-build-things-through-code-instead-of-just-asking-the-ai-for-them">Why do we build things through code instead of just asking the AI for them?</a></li>
+  <li><a href="#can-i-use-ai-on-the-quizzes-or-the-final-exam" id="toc-can-i-use-ai-on-the-quizzes-or-the-final-exam" class="nav-link" data-scroll-target="#can-i-use-ai-on-the-quizzes-or-the-final-exam">Can I use AI on the quizzes or the final exam?</a></li>
+  </ul></li>
+  <li><a href="#software-stuff" id="toc-software-stuff" class="nav-link" data-scroll-target="#software-stuff">SOFTWARE STUFF</a>
+  <ul class="collapse">
+  <li><a href="#it-says-claude-command-not-found-or-uv-command-not-found" id="toc-it-says-claude-command-not-found-or-uv-command-not-found" class="nav-link" data-scroll-target="#it-says-claude-command-not-found-or-uv-command-not-found">It says <code>claude: command not found</code> (or <code>uv: command not found</code>)</a></li>
+  <li><a href="#positron-wont-let-me-save-my-file" id="toc-positron-wont-let-me-save-my-file" class="nav-link" data-scroll-target="#positron-wont-let-me-save-my-file">Positron won’t let me save my file</a></li>
+  <li><a href="#my-quarto-document-cant-find-a-python-package" id="toc-my-quarto-document-cant-find-a-python-package" class="nav-link" data-scroll-target="#my-quarto-document-cant-find-a-python-package">My Quarto document can’t find a Python package</a></li>
+  <li><a href="#my-site-works-on-my-computer-but-not-on-github-pages" id="toc-my-site-works-on-my-computer-but-not-on-github-pages" class="nav-link" data-scroll-target="#my-site-works-on-my-computer-but-not-on-github-pages">My site works on my computer but not on GitHub Pages</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/bwai-gwu/2027-Fall/edit/main/faq.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/bwai-gwu/2027-Fall/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">FAQ</h1>
+<h1 class="title">Frequently Asked Questions</h1>
 </div>
 
 
@@ -323,9 +359,138 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Coming soon!</p>
+<section id="class-stuff" class="level1">
+<h1>CLASS STUFF</h1>
+<section id="i-cant-get-into-the-class-slack" class="level2">
+<h2 class="anchored" data-anchor-id="i-cant-get-into-the-class-slack">I can’t get into the class slack</h2>
+<p>If you registered for the class, you should have been sent a link at the start of the semester to join the class <a href="#">Slack</a>. If not, email Professor Helveston for an invite link. I recommend using your <code>@gwu.edu</code> email to sign up, but if you use another email for another Slack then use that.</p>
+</section>
+<section id="where-can-i-see-my-grades" class="level2">
+<h2 class="anchored" data-anchor-id="where-can-i-see-my-grades">Where can I see my grades?</h2>
+<p><strong><a href="https://github.com/bwai-f27/">GitHub</a></strong></p>
+<p>I do <strong>not</strong> use Blackboard for showing your grades, so please ignore anything you see there. Instead, I create a unique, private repo on the <a href="https://github.com/bwai-f27/">class GitHub organization</a> for each of you. The repo will be named <code>bwai-netID</code> (for example, Prof.&nbsp;Helveston’s GW netID is <code>jph</code>, so his repo would be <code>bwai-jph</code>). It should be the only repo you see in the organization.</p>
+<p><strong>You will use this repo both for submitting assignments and for receiving graded feedback.</strong> Each build goes in its own folder (<code>build1</code>, <code>build2</code>, etc.), and your final project goes in the <code>project</code> folder.</p>
+<p>In the <strong>feedback</strong> folder in that repo, you will see a pdf of feedback for each assignment as well as two CSV files: one that displays your grade for each assignment, and another that shows your current total grade in the class.</p>
+</section>
+<section id="i-cant-find-my-course-repo" class="level2">
+<h2 class="anchored" data-anchor-id="i-cant-find-my-course-repo">I can’t find my course repo</h2>
+<p>First, check your email for an invitation to join the <code>bwai-f27</code> organization on GitHub and <strong>accept it</strong> (check your spam folder too). You can’t see your repo until you’ve accepted. Once you have, your repo should show up in GitHub Desktop under <strong>File › Clone Repository</strong> on the <strong>GitHub.com</strong> tab, named <code>bwai-f27/bwai-netID</code>. If it’s still not there, message Prof.&nbsp;Helveston on Slack.</p>
+</section>
+<section id="is-claude-really-grading-my-builds" class="level2">
+<h2 class="anchored" data-anchor-id="is-claude-really-grading-my-builds">Is Claude really grading my builds?</h2>
+<p>Mostly, yes. Claude reads your repo, your transcript, and your token report, checks your work against the <a href="./syllabus.html#build-rubric">build rubric</a>, and drafts a score and feedback. I review those drafts and make the final call. See <a href="./syllabus.html#how-builds-are-graded">How Builds Are Graded</a> in the syllabus.</p>
+<p>If you think Claude got it wrong, ask for a <a href="./syllabus.html#re-grades">re-grade</a> and I’ll look at it myself.</p>
+</section>
+<section id="when-can-i-expect-to-see-a-grade-for-my-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="when-can-i-expect-to-see-a-grade-for-my-assignment">When can I expect to see a grade for my assignment?</h2>
+<p>Some weeks it can take up to a whole week to grade everything, so at most you can expect to see a grade <strong>one week after submitting it</strong>.</p>
+</section>
+<section id="how-can-i-submit-my-build-late" class="level2">
+<h2 class="anchored" data-anchor-id="how-can-i-submit-my-build-late">How can I submit my build late?</h2>
+<p>I use the submission timestamps on GitHub to determine if a submission is on time or not. If you’ve updated the build past the due date, it is considered late.</p>
+<p>Now, you do have some “free” late submissions - see the class <a href="./syllabus.html#late-policy">late policy</a> for details. But even so, if you’ve completed a build but it’s now late, please do go ahead and submit it. Better to get some credit for it than none.</p>
+</section>
+<section id="can-i-make-up-a-quiz-if-im-late-or-miss-class" class="level2">
+<h2 class="anchored" data-anchor-id="can-i-make-up-a-quiz-if-im-late-or-miss-class">Can I make up a quiz if I’m late or miss class?</h2>
+<p><strong>No</strong> - see the <a href="./syllabus.html#quizzes">policy in the syllabus</a> on this for any exception.</p>
+</section>
+<section id="do-i-really-need-to-submit-my-transcripts" class="level2">
+<h2 class="anchored" data-anchor-id="do-i-really-need-to-submit-my-transcripts">Do I really need to submit my transcripts?</h2>
+<p>Yes. Your transcript is the record of how you worked: what you asked for, what you checked, and what you changed. A build without a transcript can earn at most a 0.5 (see the <a href="./syllabus.html#build-rubric">build rubric</a>). In Claude Code, the <code>/export</code> command saves the current conversation to a file. We’ll go over exactly how to submit transcripts in class.</p>
+<p>Before you submit, remove any API keys, passwords, or personal information from your transcript.</p>
+</section>
+<section id="how-do-i-measure-my-token-usage" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-measure-my-token-usage">How do I measure my token usage?</h2>
+<p>We cover this in Week 5, when token reports become part of every build.</p>
+</section>
+</section>
+<section id="ai-stuff" class="level1">
+<h1>AI STUFF</h1>
+<section id="do-i-have-to-pay-for-claude-pro" class="level2">
+<h2 class="anchored" data-anchor-id="do-i-have-to-pay-for-claude-pro">Do I have to pay for Claude Pro?</h2>
+<p>To use Claude Code, yes: a free Claude account isn’t enough. But <strong>check Slack before you pay</strong> in case we get institutional access. If you’d rather not pay, <a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a> is free with a Google account. See <a href="./syllabus.html#ai-tools-and-cost">AI Tools and Cost</a> for details, and let me know if the cost is a barrier for you.</p>
+</section>
+<section id="can-i-use-codex-gemini-cli-or-some-other-agent-instead-of-claude-code" class="level2">
+<h2 class="anchored" data-anchor-id="can-i-use-codex-gemini-cli-or-some-other-agent-instead-of-claude-code">Can I use Codex, Gemini CLI, or some other agent instead of Claude Code?</h2>
+<p>Yes. The underlying skills transfer. Just know that in-class instruction, troubleshooting help, and the course materials assume Claude Code, so you’re on your own for translating anything tool-specific.</p>
+</section>
+<section id="i-hit-my-usage-limit.-what-do-i-do" class="level2">
+<h2 class="anchored" data-anchor-id="i-hit-my-usage-limit.-what-do-i-do">I hit my usage limit. What do I do?</h2>
+<p>Subscriptions have usage limits that reset after a while, so you can wait it out. But the better fix is to use fewer tokens in the first place, which is a big part of what we learn in Week 5:</p>
+<ul>
+<li>Start a fresh session (or use <code>/clear</code>) when you switch to a new task instead of running one giant conversation all week.</li>
+<li>Plan before you build, so the agent doesn’t write (and rewrite) things you didn’t want.</li>
+<li>Have the agent write code that builds your artifact instead of asking it to produce the artifact directly. Small changes to code are much cheaper than regenerating the whole thing.</li>
+</ul>
+<p>And start your builds early, so a usage limit doesn’t hit you the night before a deadline.</p>
+</section>
+<section id="why-cant-i-let-the-agent-make-commits-for-me" class="level2">
+<h2 class="anchored" data-anchor-id="why-cant-i-let-the-agent-make-commits-for-me">Why can’t I let the agent make commits for me?</h2>
+<p>Because Git is how you know what the agent changed. When you review the changes in GitHub Desktop and commit them yourself, you’re checking the agent’s work. If the agent commits for you, nobody checked. See <a href="./syllabus.html#you-control-git">You control Git</a> in the syllabus.</p>
+</section>
+<section id="the-agent-says-its-done-but-it-doesnt-work" class="level2">
+<h2 class="anchored" data-anchor-id="the-agent-says-its-done-but-it-doesnt-work">The agent says it’s done, but it doesn’t work</h2>
+<p>This happens all the time. Agents are confident, and they’re often wrong. Run the code yourself and look at the result. Then tell the agent exactly what’s wrong: paste the error message, or describe what you see versus what you expected. “It doesn’t work” is much less helpful than “the menu page renders but none of the images show up.”</p>
+<p>Only commit once you’ve checked that it actually works.</p>
+</section>
+<section id="the-agent-broke-something-that-used-to-work" class="level2">
+<h2 class="anchored" data-anchor-id="the-agent-broke-something-that-used-to-work">The agent broke something that used to work</h2>
+<p>This is why we commit often. In GitHub Desktop, the <strong>Changes</strong> tab shows you everything that changed since your last commit, so you can see exactly what the agent touched. If the changes are a mess, right-click and choose <strong>Discard changes</strong> to go back to your last commit, then start a fresh session and try again with a clearer request. If the problem is in something you already committed, the <strong>History</strong> tab shows each commit, and you can revert one from there.</p>
+</section>
+<section id="i-accidentally-committed-my-api-key" class="level2">
+<h2 class="anchored" data-anchor-id="i-accidentally-committed-my-api-key">I accidentally committed my API key!</h2>
+<p>Don’t panic, but act fast. <strong>Treat the key as compromised.</strong> Deleting it in a new commit doesn’t remove it from your Git history, and anything pushed to GitHub may already have been seen.</p>
+<ol type="1">
+<li>Delete (revoke) the key wherever you created it, and make a new one.</li>
+<li>Put the new key in a <code>.env</code> file, and make sure <code>.env</code> is listed in your <code>.gitignore</code> so Git never tracks it.</li>
+<li>Let me know, and we’ll clean up the repo together.</li>
+</ol>
+</section>
+<section id="why-do-we-build-things-through-code-instead-of-just-asking-the-ai-for-them" class="level2">
+<h2 class="anchored" data-anchor-id="why-do-we-build-things-through-code-instead-of-just-asking-the-ai-for-them">Why do we build things through code instead of just asking the AI for them?</h2>
+<p>Code gives you something you can reproduce, it uses far fewer tokens, and it gives you control. If you want to change one thing, you change one line of code instead of re-rolling the whole thing and hoping. See <a href="./syllabus.html#agent-code-artifact">Agent → code → artifact</a> in the syllabus.</p>
+</section>
+<section id="can-i-use-ai-on-the-quizzes-or-the-final-exam" class="level2">
+<h2 class="anchored" data-anchor-id="can-i-use-ai-on-the-quizzes-or-the-final-exam">Can I use AI on the quizzes or the final exam?</h2>
+<p><strong>No.</strong> Quizzes and the final exam are handwritten, with no devices or notes, because they test what <em>you</em> understand.</p>
+</section>
+</section>
+<section id="software-stuff" class="level1">
+<h1>SOFTWARE STUFF</h1>
+<section id="it-says-claude-command-not-found-or-uv-command-not-found" class="level2">
+<h2 class="anchored" data-anchor-id="it-says-claude-command-not-found-or-uv-command-not-found">It says <code>claude: command not found</code> (or <code>uv: command not found</code>)</h2>
+<p>Close your terminal and open a new one (in Positron, use the trash icon on the terminal panel, then <code>Terminal &gt; New Terminal</code>). The installer teaches your computer where the program lives, and only a freshly opened terminal knows about it. That fixes it nine times out of ten. If it still doesn’t work, go back through the steps on the <a href="./software.html">Software page</a>.</p>
+</section>
+<section id="positron-wont-let-me-save-my-file" class="level2">
+<h2 class="anchored" data-anchor-id="positron-wont-let-me-save-my-file">Positron won’t let me save my file</h2>
+<p>Most often times this occurs for one of two reasons:</p>
+<ol type="1">
+<li>You may have double-clicked a file instead of opening the <strong>folder</strong> it lives in. Positron then isn’t “looking” at that folder, and neither is your agent. Close it, then use <strong>File › Open Folder…</strong> and choose the folder itself.</li>
+<li>If you’re on a windows computer, you may have opened the file from <em>inside a zip file</em>. As a result, you can’t save anything because everything is still zipped up. Go back and extract the files from the zip first (right-click the zip and choose “extract all”), then open the extracted folder in Positron.</li>
+</ol>
+</section>
+<section id="my-quarto-document-cant-find-a-python-package" class="level2">
+<h2 class="anchored" data-anchor-id="my-quarto-document-cant-find-a-python-package">My Quarto document can’t find a Python package</h2>
+<p>If you see an error like <code>ModuleNotFoundError: No module named ...</code> when rendering, Quarto probably isn’t using your project’s Python. Check that:</p>
+<ol type="1">
+<li>The package is installed in the project (<code>uv add package-name</code>).</li>
+<li><code>ipykernel</code> is installed in the project (<code>uv add ipykernel</code>).</li>
+<li>You’re rendering through uv: <code>uv run quarto render</code>.</li>
+</ol>
+</section>
+<section id="my-site-works-on-my-computer-but-not-on-github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="my-site-works-on-my-computer-but-not-on-github-pages">My site works on my computer but not on GitHub Pages</h2>
+<p>A few common culprits:</p>
+<ul>
+<li>GitHub Pages isn’t turned on for the repo, or it’s pointed at the wrong branch or folder (check <strong>Settings › Pages</strong> on GitHub).</li>
+<li>There’s no <code>index.html</code> where GitHub Pages expects it.</li>
+<li>A file name doesn’t match its link exactly. GitHub Pages is case-sensitive, so <code>Photo.png</code> and <code>photo.png</code> are different files, even if your computer treats them the same.</li>
+<li>You haven’t pushed your latest commits. Check GitHub Desktop.</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -840,7 +1005,7 @@ ul.task-list li input[type="checkbox"] {
  © 2027 John Paul Helveston  <a href="LICENSE.html"><i class="fab fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i><i class="fab fa-creative-commons-sa"></i></a><br><i class="far fa-calendar-alt"></i> Wednesdays | <i class="far fa-clock"></i> 3:30PM - 6:00PM EST | <i class="fa fa-map-marker-alt"></i> Tompkins 201<br><a href="https://www.jhelvy.com"><i class="fas fa-user"></i> Dr. John Paul Helveston</a> | <a href="mailto:jph@gwu.edu"><i class="fas fa-envelope"></i> jph@gwu.edu</a> | <a href="https://github.com/bwai-gwu/2027-Fall"><i class="fab fa-github"></i></a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/bwai-gwu/2027-Fall/edit/main/faq.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/bwai-gwu/2027-Fall/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/bwai-gwu/2027-Fall/edit/main/faq.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/bwai-gwu/2027-Fall/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
