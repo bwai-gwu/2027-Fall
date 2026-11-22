@@ -7,6 +7,8 @@ due <- get_schedule() %>%
   filter(n_assign == params$number) %>%
   pull(due_assign) %>%
   paste0(" by 11:59pm")
+
+build_dir <- paste0("build", params$number)
 ```
 
 > **Due**: `r due`
@@ -17,8 +19,9 @@ due <- get_schedule() %>%
 >
 > **Purpose**: `r params$purpose`
 >
-> **Deliverable**: A GitHub repository with your build and the **transcript** of
-> your work with the AI (your prompts, its responses, and your iterations). From
-> Build 5 on, also include a **token usage report**. Make every commit yourself
-> in GitHub Desktop: never let the agent commit for you. Scrub API keys and
-> personal data from transcripts before submitting.
+> **Deliverable**: Submit your work in the ``r build_dir`` folder of your course
+> repo (`bwai-f27/bwai-netID`). Include your build and a `transcript.md` file of
+> your work with the AI (run `/export` in Claude Code to make it). From Build 5
+> on, also include a **token usage report**. Make every commit yourself in GitHub
+> Desktop: never let the agent commit for you. Scrub API keys and personal data
+> from transcripts before submitting.

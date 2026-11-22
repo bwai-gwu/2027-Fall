@@ -1,8 +1,136 @@
 ---
-title: "FAQ"
+title: "Frequently Asked Questions"
 toc: true
+toc-title: FAQ
 toc-location: right
 ---
 
-```{r child = here::here("fragments", "placeholder.qmd")}
-```
+# CLASS STUFF
+
+## I can't get into the class slack
+
+If you registered for the class, you should have been sent a link at the start of the semester to join the class [Slack]({{< var slack >}}). If not, email Professor Helveston for an invite link. I recommend using your `@gwu.edu` email to sign up, but if you use another email for another Slack then use that.
+
+## Where can I see my grades?
+
+**[GitHub]({{< var gitorg >}})**
+
+I do **not** use Blackboard for showing your grades, so please ignore anything you see there. Instead, I create a unique, private repo on the [class GitHub organization]({{< var gitorg >}}) for each of you. The repo will be named `bwai-netID` (for example, Prof. Helveston's GW netID is `jph`, so his repo would be `bwai-jph`). It should be the only repo you see in the organization.
+
+**You will use this repo both for submitting assignments and for receiving graded feedback.** Each build goes in its own folder (`build1`, `build2`, etc.), and your final project goes in the `project` folder.
+
+In the **feedback** folder in that repo, you will see a pdf of feedback for each assignment as well as two CSV files: one that displays your grade for each assignment, and another that shows your current total grade in the class.
+
+## I can't find my course repo
+
+First, check your email for an invitation to join the `bwai-f27` organization on GitHub and **accept it** (check your spam folder too). You can't see your repo until you've accepted. Once you have, your repo should show up in GitHub Desktop under **File › Clone Repository** on the **GitHub.com** tab, named `bwai-f27/bwai-netID`. If it's still not there, message Prof. Helveston on Slack.
+
+## Is Claude really grading my builds?
+
+Mostly, yes. Claude reads your repo, your transcript, and your token report, checks your work against the [build rubric](syllabus.qmd#build-rubric), and drafts a score and feedback. I review those drafts and make the final call. See [How Builds Are Graded](syllabus.qmd#how-builds-are-graded) in the syllabus.
+
+If you think Claude got it wrong, ask for a [re-grade](syllabus.qmd#re-grades) and I'll look at it myself.
+
+## When can I expect to see a grade for my assignment?
+
+Some weeks it can take up to a whole week to grade everything, so at most you can expect to see a grade **one week after submitting it**.
+
+## How can I submit my build late?
+
+I use the submission timestamps on GitHub to determine if a submission is on time or not. If you've updated the build past the due date, it is considered late.
+
+Now, you do have some "free" late submissions - see the class [late policy](syllabus.qmd#late-policy) for details. But even so, if you've completed a build but it's now late, please do go ahead and submit it. Better to get some credit for it than none.
+
+## Can I make up a quiz if I'm late or miss class?
+
+**No** - see the [policy in the syllabus](syllabus.qmd#quizzes) on this for any exception.
+
+## Do I really need to submit my transcripts?
+
+Yes. Your transcript is the record of how you worked: what you asked for, what you checked, and what you changed. A build without a transcript can earn at most a 0.5 (see the [build rubric](syllabus.qmd#build-rubric)). In Claude Code, the `/export` command saves the current conversation to a file. We'll go over exactly how to submit transcripts in class.
+
+Before you submit, remove any API keys, passwords, or personal information from your transcript.
+
+## How do I measure my token usage?
+
+We cover this in Week 5, when token reports become part of every build.
+
+# AI STUFF
+
+## Do I have to pay for Claude Pro?
+
+To use Claude Code, yes: a free Claude account isn't enough. But **check Slack before you pay** in case we get institutional access. If you'd rather not pay, [Gemini CLI](https://github.com/google-gemini/gemini-cli) is free with a Google account. See [AI Tools and Cost](syllabus.qmd#ai-tools-and-cost) for details, and let me know if the cost is a barrier for you.
+
+## Can I use Codex, Gemini CLI, or some other agent instead of Claude Code?
+
+Yes. The underlying skills transfer. Just know that in-class instruction, troubleshooting help, and the course materials assume Claude Code, so you're on your own for translating anything tool-specific.
+
+## I hit my usage limit. What do I do?
+
+Subscriptions have usage limits that reset after a while, so you can wait it out. But the better fix is to use fewer tokens in the first place, which is a big part of what we learn in Week 5:
+
+- Start a fresh session (or use `/clear`) when you switch to a new task instead of running one giant conversation all week.
+- Plan before you build, so the agent doesn't write (and rewrite) things you didn't want.
+- Have the agent write code that builds your artifact instead of asking it to produce the artifact directly. Small changes to code are much cheaper than regenerating the whole thing.
+
+And start your builds early, so a usage limit doesn't hit you the night before a deadline.
+
+## Why can't I let the agent make commits for me?
+
+Because Git is how you know what the agent changed. When you review the changes in GitHub Desktop and commit them yourself, you're checking the agent's work. If the agent commits for you, nobody checked. See [You control Git](syllabus.qmd#you-control-git) in the syllabus.
+
+## The agent says it's done, but it doesn't work
+
+This happens all the time. Agents are confident, and they're often wrong. Run the code yourself and look at the result. Then tell the agent exactly what's wrong: paste the error message, or describe what you see versus what you expected. "It doesn't work" is much less helpful than "the menu page renders but none of the images show up."
+
+Only commit once you've checked that it actually works.
+
+## The agent broke something that used to work
+
+This is why we commit often. In GitHub Desktop, the **Changes** tab shows you everything that changed since your last commit, so you can see exactly what the agent touched. If the changes are a mess, right-click and choose **Discard changes** to go back to your last commit, then start a fresh session and try again with a clearer request. If the problem is in something you already committed, the **History** tab shows each commit, and you can revert one from there.
+
+## I accidentally committed my API key!
+
+Don't panic, but act fast. **Treat the key as compromised.** Deleting it in a new commit doesn't remove it from your Git history, and anything pushed to GitHub may already have been seen.
+
+1. Delete (revoke) the key wherever you created it, and make a new one.
+2. Put the new key in a `.env` file, and make sure `.env` is listed in your `.gitignore` so Git never tracks it.
+3. Let me know, and we'll clean up the repo together.
+
+## Why do we build things through code instead of just asking the AI for them?
+
+Code gives you something you can reproduce, it uses far fewer tokens, and it gives you control. If you want to change one thing, you change one line of code instead of re-rolling the whole thing and hoping. See [Agent → code → artifact](syllabus.qmd#agent-code-artifact) in the syllabus.
+
+## Can I use AI on the quizzes or the final exam?
+
+**No.** Quizzes and the final exam are handwritten, with no devices or notes, because they test what *you* understand.
+
+# SOFTWARE STUFF
+
+## It says `claude: command not found` (or `uv: command not found`)
+
+Close your terminal and open a new one (in Positron, use the trash icon on the terminal panel, then `Terminal > New Terminal`). The installer teaches your computer where the program lives, and only a freshly opened terminal knows about it. That fixes it nine times out of ten. If it still doesn't work, go back through the steps on the [Software page](software.qmd).
+
+## Positron won't let me save my file
+
+Most often times this occurs for one of two reasons:
+
+1. You may have double-clicked a file instead of opening the **folder** it lives in. Positron then isn't "looking" at that folder, and neither is your agent. Close it, then use **File › Open Folder…** and choose the folder itself.
+2. If you're on a windows computer, you may have opened the file from _inside a zip file_. As a result, you can't save anything because everything is still zipped up. Go back and extract the files from the zip first (right-click the zip and choose "extract all"), then open the extracted folder in Positron.
+
+## My Quarto document can't find a Python package
+
+If you see an error like `ModuleNotFoundError: No module named ...` when rendering, Quarto probably isn't using your project's Python. Check that:
+
+1. The package is installed in the project (`uv add package-name`).
+2. `ipykernel` is installed in the project (`uv add ipykernel`).
+3. You're rendering through uv: `uv run quarto render`.
+
+## My site works on my computer but not on GitHub Pages
+
+A few common culprits:
+
+- GitHub Pages isn't turned on for the repo, or it's pointed at the wrong branch or folder (check **Settings › Pages** on GitHub).
+- There's no `index.html` where GitHub Pages expects it.
+- A file name doesn't match its link exactly. GitHub Pages is case-sensitive, so `Photo.png` and `photo.png` are different files, even if your computer treats them the same.
+- You haven't pushed your latest commits. Check GitHub Desktop.

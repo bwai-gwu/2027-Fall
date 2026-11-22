@@ -116,6 +116,22 @@ proposal 2%, final project 13%, final exam 30%. The syllabus also has draft
   - Grading happens before the exam. A few projects are showcased at the start
     of the exam.
 
+## Submissions and grades
+
+The setup copies EDA (`eda-f26/eda-netID`). There's one GitHub organization
+per semester, `bwai-f27` (the `gitorg` variable). It's separate from
+`bwai-gwu`, which hosts the site. Each student gets one private repo there,
+`bwai-netID`:
+
+- builds go in `build1` … `build13`;
+- the proposal and final project go in `project`;
+- graded feedback (PDFs plus grade CSVs) comes back in `feedback`.
+
+Builds that deploy to GitHub Pages (the personal site in Builds 3–5, and likely
+the final project) need their own public repo. Their build folder in the course
+repo holds the link plus the transcript and token report. Spell this out on
+those build pages, and add EDA-style "clone your course repo" steps to Build 1.
+
 ## Dropped from earlier plans
 
 Team projects and team studio, the interim report, final presentations,

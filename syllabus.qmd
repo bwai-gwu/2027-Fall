@@ -67,7 +67,7 @@ The semester moves in three stages:
   data visualizations, and slides. You'll also work on your
   [final project](#final-project) in the second half of the semester.
 
-## Agent → code → artifact
+## Agent → code → artifact {#agent-code-artifact}
 
 From Week 5 on, we build everything the same way. **The agent writes the code, you
 run the code, and the code builds the artifact.** We don't ask the AI to hand us
@@ -167,16 +167,21 @@ Each week from Week 1 through Week 13 there is a take-home **build**: you use th
 week's concept to make something on your own. There are 13 builds in total, and
 your **lowest build score is dropped**.
 
-Every build is submitted as a GitHub repository that includes:
+Every build is submitted in its own folder (`build1`, `build2`, etc.) in your
+**course repo**, a private GitHub repo that I create for each of you in the
+[class GitHub organization]({{< var gitorg >}}). The repo is named `bwai-netID`,
+where `netID` is your GW netID. Each build folder includes:
 
 - the build itself (from Week 5 on, the code that renders your artifact, not
   just the artifact);
 - the **transcript** of your work with the AI (your prompts, its responses, and
-  your iterations);
+  your iterations), saved as `transcript.md`;
 - from Build 5 on, a short **token usage report** (we'll learn how to measure this
   in Week 5).
 
 Builds are graded on a 0 / 0.5 / 1 scale using the [build rubric](#build-rubric).
+Your grades and feedback come back to you in the `feedback` folder of the same
+repo.
 You may discuss approaches with your classmates, but every build is your own work.
 
 ## Final Project
@@ -184,13 +189,13 @@ You may discuss approaches with your classmates, but every build is your own wor
 The final project is **individual**: everyone builds their own project of their
 own design, using the workflow and the kinds of things we've built during the
 semester. We introduce the project in Week 8 so you have time to think about it.
-There are two deliverables:
+Both deliverables are submitted in the `project` folder of your course repo:
 
 - **Proposal** (due Oct 27). A short, high-level description of what you want to
   build. It's graded for completion (1 if you submit it, 0 if you don't). Its
   purpose is to get you feedback early on whether your idea is a good one and
   whether it's well scoped.
-- **Final submission** (due Dec 8). A link to a GitHub repository with your
+- **Final submission** (due Dec 8). A link to the GitHub repository with your
   project and all of its source files, your transcripts, a token usage report,
   and a **5-minute video** about your project posted to YouTube. In Week 15 we'll
   learn to build slide decks, which you can use in your video. Graded 0 / 0.5 / 1
