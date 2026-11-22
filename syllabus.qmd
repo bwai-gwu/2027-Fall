@@ -20,7 +20,7 @@ Instructor | Course
 <i class="bi-person-fill"></i> John Paul Helveston | <i class="bi-calendar-fill"></i> {{< var weekday >}}
 <i class="bi-building-fill"></i> Science & Engineering Hall, 2830 | <i class="bi-geo-alt-fill"></i> [{{< var room >}}]({{< var room_url >}})
 <i class="bi-envelope-fill"></i> [{{< var email >}}](mailto:{{< var email >}}) | <i class="bi-calendar-week-fill"></i> {{< var dates >}}
-<i class="fa fa-brands fa-bluesky"></i> [\@jhelvy.bsky.social]({{< var bluesky >}}) | <i class="bi-clock-fill"></i> {{< var time >}}
+<i class="fa fa-brands fa-linkedin"></i> [\@jhelvy]({{< var linkedin >}}) | <i class="bi-clock-fill"></i> {{< var time >}}
 <i class="bi-slack"></i> [Slack]({{< var slack >}}){target="_blank"} |
 </div>
 
@@ -41,59 +41,36 @@ Instructor | Course
 
 # How the Course Works
 
-This class is a workshop. Each week has the same rhythm:
+This class meets once per week. Each week has the same pattern:
 
-1. **Quiz.** Class starts with a short, handwritten quiz on the previous week.
-2. **Concept.** We learn one new idea (how LLMs work, what an agent is, how to
-   inject data into a document, etc.).
-3. **Build together.** We use that idea in class to make something, hands-on.
-4. **Build at home.** You take the idea further on your own in that week's
-   [build](#builds), due the following week.
+1. **Quiz.** Class starts with a short, handwritten quiz on the previous weeks' content.
+2. **Concept.** We learn a new technical concept (e.g., how LLMs work, what an agent is, how to inject data into a document, etc.).
+3. **Build together.** We use that idea in class to make something.
+4. **Build at home.** You take the idea further on your own in that week's [build](#builds), due the following week.
 
-Each week pairs a **concept** (the idea we learn) with a **building** (the kind of
-thing we make). Some buildings span several weeks. For example, we work on
-websites in Weeks 3 through 5, and each week adds a new idea on top of the last.
-The [schedule](schedule.qmd) lists both for every week.
+Each week pairs a **concept** (the idea we learn) with a **building** (the kind of thing we make). Some buildings span several weeks. For example, we work on websites in Weeks 3 through 5, and each week adds a new idea on top of the last. The [schedule](schedule.qmd) lists both for every week.
 
-The semester moves in three stages:
+The semester has three key periods:
 
-- **Weeks 1-2: Foundations, no agents.** We use chat-based AI tools, learn how
-  LLMs work, and learn Git and GitHub by hand.
-- **Weeks 3-5: Agents and websites.** We bring in AI coding agents and build and
-  deploy websites. In Week 5 we switch to the workflow we use for the rest of the
-  semester.
-- **Weeks 6-15: New things to build.** Each week adds a new skill and a new kind
-  of artifact: writing, images, animation, sound, data-driven documents, PDFs,
-  data visualizations, and slides. You'll also work on your
-  [final project](#final-project) in the second half of the semester.
+- **Weeks 1-2: Foundations.** We use chat-based AI tools, learn how LLMs work, and learn Git and GitHub by hand.
+- **Weeks 3-5: Agents and websites.** We bring in AI coding agents and build and deploy websites. In Week 5 we switch to the workflow we use for the rest of the semester.
+- **Weeks 6-15: Build artifacts.** Each week adds a new skill and a new kind of artifact: writing, images, animation, sound, data-driven documents, PDFs, data visualizations, and slides. You'll also work on your [final project](#final-project) in the second half of the semester.
 
 ## Agent → code → artifact {#agent-code-artifact}
 
-From Week 5 on, we build everything the same way. **The agent writes the code, you
-run the code, and the code builds the artifact.** We don't ask the AI to hand us
-the finished website, image, or PDF directly. Building through code gives you
-something you can reproduce, it uses far fewer tokens, and it gives you control:
-if you want to change one thing, you change one line of code instead of
-re-rolling the whole thing and hoping.
+From Week 5 on, we build everything the same way. **The agent writes the code, you run the code, and the code builds the artifact.** We don't ask the AI to hand us the finished website, image, or PDF directly. Building through code gives you something you can reproduce, it uses far fewer tokens, and it gives you control when you want to change something. Instead of re-prompting the AI to start over, you just change a few lines of code (either yourself, or with the agent's help).
 
 ## You control Git
 
-Git is how you know what an agent changed. In this class **you always control Git
-yourself, through [GitHub Desktop](https://desktop.github.com/download/). Never
-let the agent make commits for you.** Review what the agent changed (the diff in
-GitHub Desktop), check that it works, and then commit it yourself with a message
-that says what changed.
+Git is how you know what an agent changed. In this class **you always control Git yourself**. We never let the agent make commits for you. Review what the agent changed (e.g., the diff in GitHub Desktop), check that it works, and then commit it yourself with a message that says what changed.
 
 # Required Texts & Materials
 
-All readings for this course are freely available on the web and will be linked
-from each week's class page and the [Resources](references.qmd) page. Software is
-mostly free, with the exceptions noted in [AI Tools and Cost](#ai-tools-and-cost).
+All readings for this course are freely available on the web and will be linked from each week's class page and the [Resources](references.qmd) page. Software is mostly free, with the exceptions noted in [AI Tools and Cost](#ai-tools-and-cost).
 
 ## Software
 
-Go to the course [Software page](software.qmd) for detailed instructions on how to
-install the software we'll be using. Here's a quick list:
+Go to the course [Software page](software.qmd) for detailed instructions on how to install the software we'll be using. Here's a quick list:
 
 - [Positron](https://positron.posit.co/download.html), a free code editor for
   Python and Quarto.
@@ -103,86 +80,42 @@ install the software we'll be using. Here's a quick list:
   documents, and slides.
 - [GitHub Desktop](https://desktop.github.com/download/) and a free
   [GitHub](https://github.com/) account.
-- [Claude Code](https://code.claude.com/docs/en/quickstart), the AI coding agent
-  we'll use all semester. This requires **at least a Claude Pro subscription**
-  (see [AI Tools and Cost](#ai-tools-and-cost)).
-- We'll be using [Slack]({{< var slack >}}){target="_blank"} for most
-  communication.
+- An AI agent like [Claude Code](https://code.claude.com/docs/en/quickstart), the AI coding agent we'll use all semester. This requires **at least a Claude Pro subscription** (see [AI Tools and Cost](#ai-tools-and-cost)).
+- We'll be using [Slack]({{< var slack >}}){target="_blank"} for most communication.
 
 # Assignments
 
 ## Participation & Attendance
 
-**Attendance will be taken** and will be part of your participation grade.
+**Attendance will be taken** and will be part of your participation grade. In-person attendance is critical as we will spend most of class building things together. You should plan to attend class in person each week.
 
-In-person attendance is critical as we will spend most of class building things
-together. You should plan to attend class in person each week.
+**There will be no option for remote attendance (e.g. zoom)**, and class sessions will not be recorded. If you have any questions or need special accommodations, send me a message on slack and we can discuss. If you must miss class for an excused absence (e.g. medical issue), please message Professor Helveston and get notes from your fellow classmates.
 
-**There will be no option for remote attendance (e.g. zoom)**, and class sessions
-will not be recorded. If you have any questions or need special accommodations,
-send me a message on slack and we can discuss. If you must miss class for an
-excused absence (e.g. medical issue), please message Professor Helveston and get
-notes from your fellow classmates.
-
-Multiple absences, inappropriate or unprofessional behavior during class (such as
-monopolizing discussions or being rude or disruptive), not participating in
-classroom exercises, and not being prepared for class will result in a poor score
-for attendance and participation.
+Multiple absences, inappropriate or unprofessional behavior during class (such as monopolizing discussions or being rude or disruptive), not participating in classroom exercises, and not being prepared for class will result in a poor score for attendance and participation.
 
 ## Quizzes
 
-There will be **13 short quizzes**, one at the start of every class from Week 2
-on (check the [schedule](schedule.qmd)). Quizzes are **handwritten** on paper,
-with no devices or notes. They are **conceptual**: they test whether you
-understand the ideas from the previous week (what a token is, what a commit
-records, why an agent shouldn't retype your data), not whether you can write code
-from memory.
+There will be **13 short quizzes**, one at the start of every class from Week 2 on (check the [schedule](schedule.qmd)). Quizzes are **handwritten** on paper, with no devices or notes. They are **conceptual**: they test whether you understand the ideas from the previous week (what a token is, what a commit records, why an agent shouldn't retype your data), not whether you can write code from memory.
 
-Quizzes are **short** (10 minutes) and are designed to test for fluency and to
-demonstrate where additional study is needed. Your **lowest two are dropped**. If
-you do poorly on one or two, use that as feedback on where you need additional
-improvement.
+Quizzes are **short** (10 minutes) and are designed to test for fluency and to demonstrate where additional study is needed. Your **lowest two are dropped**. If you do poorly on one or two, use that as feedback on where you need additional improvement.
 
-**The best way to ensure you do well on quizzes is to be active in class and
-complete your builds on time.**
+**The best way to ensure you do well on quizzes is to be active in class and complete your builds on time.**
 
-**Make up quizzes are not available**. If you arrive late, you can take the quiz
-in the remaining time left, but you will not be given additional time. Make ups
-will only be allowed for excused absences that are discussed and agreed upon with
-the professor _prior_ to class. If you contact the professor after class for a
-make up, it will not be granted unless a true emergency prevented you from
-attending class that could not have been communicated earlier.
+**Make up quizzes are not available**. If you arrive late, you can take the quiz in the remaining time left, but you will not be given additional time. Make ups will only be allowed for excused absences that are discussed and agreed upon with the professor _prior_ to class. If you contact the professor after class for a make up, it will not be granted unless a true emergency prevented you from attending class that could not have been communicated earlier.
 
-> **Why quiz at all?** Research shows that giving small quizzes throughout a class
-> can dramatically help with *retention*. It's a phenomenon known as the
-> "retrieval effect" - basically, you have to _practice_ remembering things,
-> otherwise your brain won't remember them. The phenomenon and research on it is
-> explained in detail in the book
-> ["Make It Stick: The Science of Successful Learning,"](https://www.hup.harvard.edu/catalog.php?isbn=9780674729018)
-> by Brown, Roediger, and McDaniel.
+> **Why quiz at all?** Research shows that giving small quizzes throughout a class can dramatically help with *retention*. It's a phenomenon known as the "retrieval effect" - basically, you have to _practice_ remembering things, otherwise your brain won't remember them. The phenomenon and research on it is explained in detail in the book ["Make It Stick: The Science of Successful Learning,"](https://www.hup.harvard.edu/catalog.php?isbn=9780674729018) by Brown, Roediger, and McDaniel.
 
 ## Builds
 
-Each week from Week 1 through Week 13 there is a take-home **build**: you use that
-week's concept to make something on your own. There are 13 builds in total, and
-your **lowest build score is dropped**.
+Each week from Week 1 through Week 13 there is a take-home **build**: you use that week's concept to make something on your own. There are 13 builds in total, and your **lowest build score is dropped**.
 
-Every build is submitted in its own folder (`build1`, `build2`, etc.) in your
-**course repo**, a private GitHub repo that I create for each of you in the
-[class GitHub organization]({{< var gitorg >}}). The repo is named `bwai-netID`,
-where `netID` is your GW netID. Each build folder includes:
+Every build is submitted in its own folder (`build1`, `build2`, etc.) in your **course repo**, a private GitHub repo that I create for each of you in the [class GitHub organization]({{< var gitorg >}}). The repo name is your GW netID, so it will be viewable at `https://github.com/bwai-f27/netID`, replacing `netID` with your GW netID. Each build folder includes:
 
-- the build itself (from Week 5 on, the code that renders your artifact, not
-  just the artifact);
-- the **transcript** of your work with the AI (your prompts, its responses, and
-  your iterations), saved as `transcript.md`;
-- from Build 5 on, a short **token usage report** (we'll learn how to measure this
-  in Week 5).
+- the build itself.
+- the **transcript** of your work with the AI (your prompts, its responses, and your iterations), saved as `transcript.md`
+- from Build 5 on, a short **token usage report** (we'll learn how to measure this in Week 5).
 
-Builds are graded on a 0 / 0.5 / 1 scale using the [build rubric](#build-rubric).
-Your grades and feedback come back to you in the `feedback` folder of the same
-repo.
-You may discuss approaches with your classmates, but every build is your own work.
+Builds are graded on a 0 / 0.5 / 1 scale using the [build rubric](#build-rubric). Your grades and feedback come back to you in the `feedback` folder of the same repo. You may discuss approaches with your classmates, but every build is your own work.
 
 ## Final Project
 
