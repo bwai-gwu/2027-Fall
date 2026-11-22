@@ -91,7 +91,7 @@ Notes:
 
 **Proposed weights** (in `syllabus.qmd`, awaiting John's review): participation
 5%, builds 25% (lowest dropped), quizzes 25% (lowest two dropped), project
-proposal 2%, final project 13%, final exam 30%. The syllabus also has draft
+proposal 2%, final project 18%, final exam 25%. The syllabus also has draft
 0 / 0.5 / 1 rubrics for builds and the final project.
 
 - **Builds (13):** one per week, graded **0 / 0.5 / 1**, mostly auto-graded by
