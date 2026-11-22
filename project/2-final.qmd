@@ -2,7 +2,7 @@
 title: "Final Project"
 params:
   number: 2
-  weight: "13%"
+  weight: "18%"
   purpose: "Build something of your own design using the agent → code → artifact workflow, and show it off in a 5-minute video."
 execute:
   echo: false

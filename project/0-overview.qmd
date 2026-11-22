@@ -24,7 +24,7 @@ want to make before the proposal is due.
 Item | Weight | Grading | Due
 -----|--------|---------|-----------------
 [Proposal](1-proposal.qmd) | 2% | Completion (1 / 0) | Oct 27 (Week 10)
-[Final Project](2-final.qmd) | 13% | 0 / 0.5 / 1 ([rubric](../syllabus.qmd#final-project-rubric)) | Dec 8
+[Final Project](2-final.qmd) | 18% | 0 / 0.5 / 1 ([rubric](../syllabus.qmd#final-project-rubric)) | Dec 8
 
 </div>
 
