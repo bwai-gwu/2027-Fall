@@ -1,12 +1,7 @@
 Having successfully completed this course, students will be able to:
 
-- Explain how large language models work, including tokens, context windows, and why they make mistakes.
-- Judge when a chat-based AI tool is a good fit for a task and when it isn't.
-- Use Git and GitHub to track, review, and commit changes to code bases.
-- Skillfully direct AI agents using the agent → code → artifact workflow, so that what you build is reproducible.
-- Manage context and token use to work efficiently with an AI agent.
-- Write and use AI agent skills.
-- Build and deploy websites with HTML, CSS, JavaScript, Quarto, and GitHub Pages.
-- Use code to generate and customize images, animations, sound, PDFs, data visualizations, and slides.
-- Inject data into documents and other AI-generated artifacts.
-- Check AI output with verification loops, and use AI responsibly: verify facts, protect secrets, and disclose your AI use.
+- Explain, in non-technical terms, how AI models work (including tokens and context) and why that leads to their strengths, weaknesses, and failure modes.
+- Direct AI agents to build a wide range of artifacts, such as websites, writing, images, animations, documents, data visualizations, and slide decks, for a defined goal.
+- Apply a reliable, reproducible workflow for agentic work: version control with Git and GitHub, building artifacts through code, and managing context, tokens, and cost efficiently.
+- Verify AI output for accuracy, quality, and fitness for purpose, and correct or reject it when it falls short.
+- Use AI responsibly, by protecting secrets and private data, respecting attribution and authorship, and disclosing AI use.
