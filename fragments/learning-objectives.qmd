@@ -5,4 +5,3 @@ Having successfully completed this course, students will be able to:
 - Apply a reliable, reproducible workflow for agentic work: version control with Git and GitHub, building artifacts through code, and managing context, tokens, and cost efficiently.
 - Verify AI output for accuracy, quality, and fitness for purpose, and correct or reject it when it falls short.
 - Use AI responsibly, by protecting secrets and private data, respecting attribution and authorship, and disclosing AI use.
-- Use AI tools to learn new domains and take on harder problems independently.
