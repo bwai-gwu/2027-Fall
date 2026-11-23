@@ -29,6 +29,8 @@ Instructor | Course
 ```{r child = here::here("fragments", "description.qmd")}
 ```
 
+**Short Bulletin Description:** AI workflows to accurately and responsibly build software, media, documents, and data visualizations across domains. AI strengths/weaknesses, context management, and token efficiency.
+
 ## Prerequisites
 
 ```{r child = here::here("fragments", "prerequisites.qmd")}
